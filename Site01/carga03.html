@@ -1,0 +1,218 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #ec1b2f;
+}
+#texto01,#texto02{
+    border:inset;
+}
+    body {
+        height: 100vh;
+        background: black;
+        color: white;
+    }
+
+    .border_01 {
+        border: outset;
+        border-radius: 20px;
+        border-right-style: double;
+    }
+
+        .td01 {
+        border: outset;
+        border-radius: 10px;
+        padding:5px;
+    }
+        .td02 {
+        border: inset;
+        border-radius: 20px;
+        margin-left:10px;
+        padding:5px;
+        color: lawngreen;
+    }
+
+    .master {
+        /* height: 100%; */
+        width: 100%;
+        padding: 5px;
+    }
+
+    .row01 {
+        height: 10vh;
+        padding: 1%;
+    }
+
+    .row02 {
+        height: 90vh;
+        padding: 1%;
+    }
+
+    .row03 {
+        height: 78vh;
+        padding: 1%;
+    }
+
+    select {
+        width: 100%;
+        padding: 5px;
+        overflow: auto;
+        background: transparent;
+        color: white;
+        height: 200px;
+        overflow-x: hidden;
+        border: none;
+    }
+
+    option {
+        border: outset;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    option:hover {
+        background: red;
+    }
+
+    .master button {
+        border: outset;
+        border-radius: 10px;
+        /* margin:5px; */
+    }
+
+    input {
+        width: 100%;
+        text-align: -webkit-center;
+        /* border: inset; */
+        background: transparent;
+        color: white;
+    }
+    #div_07 tr{
+                border: outset;
+                border-radius: 10px;
+                margin:10px;
+                padding:10px;
+                table-layout: auto;
+                display: flex;
+                width:100%;
+    }
+        #div_07 .td01{
+            border: outset;
+            border-radius: 10px;
+            margin-left: 5px;
+            width:30%;
+            text-align: center;
+            font-size: small;
+    }
+            #div_07 .td02{
+            border: inset;
+            border-radius: 20px;
+            margin-left: 10px;
+            width:70%;
+            padding-left: 8px;
+    }
+    table {
+    /* border-collapse: collapse; */
+    width: 95%;
+}
+</style>
+<script>
+
+    function get_01() {
+sel01.innerHTML="";
+      var getting = document.cookie;
+      console.log(getting);
+      var num01=getting.split(";").length;
+
+      for(i=0;i<num01;i++){
+
+          console.log(getting.split(';')[i])
+          sel01.innerHTML+="<option onclick='option01(this.innerHTML)'>"+getting.split(';')[i]+"</option>"
+      }
+
+
+    }
+    function option01(text03){
+     //   alert(text03);
+        texto01.value=text03.split("=")[0];
+        texto02.value=text03.split("=")[1];
+        
+    }
+
+    function crea01(){
+
+      var getting = document.cookie;
+      var num01=getting.split(";").length;
+var nome07="";
+
+nome07+="<table><tbody>";
+      for(i=0;i<num01;i++){
+
+     //     console.log(getting.split(';')[i])
+  //   "<option onclick='option01(this.innerHTML)'>"+getting.split(';')[i]+"</option>"
+      
+
+ nome07+="<tr><td class='td01'>" + getting.split(';')[i].split('=')[0]+"</td><td class='td02'>"+ getting.split(';')[i].split('=')[1]+"</td></tr>"  
+
+
+      }
+nome07+="</tbody></table>";
+
+div_07.innerHTML=nome07;
+
+
+
+    }
+</script>
+<div class="container-fluid ">
+    <div class="row row01">
+        <div class="master border_01">
+            <button onclick=" crea01()">Refresh</button>
+        </div>
+    </div>
+    <div class="row row02">
+        <div class="col-sm-4">
+            <div class=" master border_01">
+     <h2>Cookie List</h2>
+<hr>
+                <select id="sel01" size="2" class="">
+                    <option>select</option>
+                    <option>select</option>
+
+                </select>
+                <hr>
+                <input style="text-align:center" value="Get Cookies" class="  border_01" type "button" id="run02" onclick="get_01()">
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="row row01">
+                <div class="master border_01"></div>
+            </div>
+            <div class="row row03">
+                <div class="col-sm-5">
+                    <div class=" master border_01">
+              <h2>    Cookie Update</h2>
+                  <hr>      Cookie      <input class="  border_01" type "text" id="texto01" value="">
+                   <hr>     Value            <input class="  border_01" type "text" id="texto02" value="">
+                      <hr>  <input  style="text-align:center"  value="Update" class="  border_01" type "button" id="run01" onclick="document.cookie = texto01.value + '=' + texto02.value;get_01();">
+                   
+
+                    </div>
+                </div>
+                <div class="col-sm-7">
+                 <div  class=" master border_01">
+                 <h2>Cookie Table</h2>
+                 <hr>
+                    <div id="div_07" class=" master "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
