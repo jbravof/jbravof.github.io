@@ -21,6 +21,25 @@ body {
     border-radius: 12px;
 }
 
+html {
+    background: black;
+}
+
 #head01 {
-    position: absolute
+    position: absolute;
+    top: 1px;
+    background: black;
+    right: 2px;
+    left: 2px;
+    padding: 5px;
+}
+
+body div {
+    background: black;
+}
+
+.mnu_footer_table {
+    border: outset;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
