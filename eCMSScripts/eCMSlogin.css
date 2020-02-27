@@ -3,3 +3,15 @@ button {
     border-radius: 10px;
     padding: 20px;
 }
+
+body {
+    background-color: rgb(19, 17, 17);
+    color: lawngreen;
+}
+
+.k-textbox {
+    background: transparent;
+    border: outset;
+    border-radius: 8px;
+    color: lawngreen;
+}
