@@ -43,3 +43,22 @@ body div {
     border-radius: 12px;
     margin-bottom: 10px;
 }
+
+img {
+    background-color: rgba(245, 245, 245, 0);
+}
+
+#resetbutton,
+#login {
+    text-align: center;
+    padding: 0;
+}
+
+#head02 {
+    position: absolute;
+    top: 0px;
+    background: black;
+    right: 2px;
+    left: 2px;
+    padding: 5px;
+}
