@@ -1,0 +1,95 @@
+.border_01 {
+    border: outset;
+}
+
+.boton_01 {
+    border: outset;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+#master_div {
+    border: solid 1px black;
+    position: absolute;
+    /* width: 100%; */
+    top: 75px;
+    right: 5px;
+    left: 5px;
+    height: 300px;
+    background: rgb(15, 235, 44);
+    border-radius: 15px;
+    padding: 10px;
+    display: none;
+}
+
+#OpcionesMenu {
+    position: absolute;
+    top: 0px;
+    left: -12px;
+    right: 0;
+    display: flex;
+    font-size: xx-small;
+    background: rgb(7, 6, 6);
+    /* padding: 5px; */
+    width: 100%;
+    /* justify-items: stretch; */
+    justify-content: space-evenly;
+    height: 115px;
+    padding-top: 7px;
+}
+
+.BotonGrupoInformes {
+    background-color: RGBA(0, 204, 102, 1);
+    color: white;
+    font-size: small;
+    /* margin-bottom: 5%; */
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+    /* padding: 5px; */
+    border-radius: 8px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.TituloReports {
+    display: none;
+}
+
+.Arbol {
+    border: outset;
+    border-radius: 18px;
+    height: 400px;
+    overflow: auto;
+    margin-top: 24px;
+    width: 35%;
+    padding: 5px;
+    z-index: 90000000000000000000000000;
+}
+
+.NombreAplicacion {
+    display: none;
+}
+
+#TituloGrupoInformes {
+    display: none;
+}
+
+#vistaPrevia {
+    border: outset;
+    border-radius: 18px;
+    height: 600px;
+    overflow: auto;
+    margin-top: 24px;
+    width: 35%;
+}
+
+body,
+#vistaPrevia,
+body *,
+#vistaPrevia * {
+    background: black;
+    color: lawngreen;
+}
