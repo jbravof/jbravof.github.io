@@ -1,0 +1,33 @@
+.cl01 {
+    border: outset;
+    height: -webkit-fill-available;
+    border-radius: 22px;
+    margin-bottom: 12%;
+}
+
+.head-01 {
+    background-color: #df4646;
+    height: 10%;
+    margin: 1%;
+    border-radius: 10px;
+    border: outset 4px blue;
+}
+html{
+    overflow:hidden;
+}
+.panel-01{
+    border: outset;
+    height: -webkit-fill-available;
+    margin: 0.3%;
+    border-radius: 22px;
+    width: 20%;
+    float: left;
+}
+.panel-02{
+    border: outset;
+    height: -webkit-fill-available;
+    margin: 0.3%;
+    border-radius: 22px;
+    width: 75%;
+    float: right;
+}

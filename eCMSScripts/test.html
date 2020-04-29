@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="eCMSdevAPP.css">
+<link rel="stylesheet" href="eCMSdevSELECTION22.css">
+
+<script src="eCMSdevAPP.js"></script>
+<div class="container">
+    <div class=" head01 pos01">
+        <!-- Rounded switch -->
+        <nav>
+            <p>Load</p>
+            <label class="switch border_01">
+      <input onclick="switch01(this.id)" type="checkbox" id="sw01" unchecked>
+      <span class="slider round"></span>
+    </label>
+        </nav>
+        <button onclick="iframe_01()">Spool</button>
+        <button onclick="iframe_03()">Favorites</button>
+        <div id="head02" class="border_01">
+            <button class="border_01" onclick="lee01()">Load</button>
+            <button class="border_01" onclick="esconde01()">Esconde</button>
+            <button class="border_01" onclick="muestra01()">Muestra</button>
+
+
+            <button style="border-color:red" class="border_01" onclick="type_01()">Branch</button>
+            <button style="border-color:blue" class="border_01" onclick="type_02()">Own Job</button>
+            <button class="border_01" onclick="type_03()">JV</button>
+            <button style="border-color:green" class="border_01" onclick="type_04()">Other</button>
+
+
+        </div>
+    </div>
+    <div class="border01 content01 pos01">
+
+        <button onclick="tool01()">
+        <h2>Menu</h2>
+        </button>
+
+        <hr>
+        <div id="div_box0" style="overflow: auto;    height: 92%;    ">
+
+            <div id="div_box">
+
+            </div>
+        </div>
+    </div>
+    <div onclick="hide02()" id="div_box2"></div>
+    <div class="border01 pos01" onclick="hide02()" id="div_box25"></div>
+    <div class="border01 pos01" onclick="hide02()" id="div_box3">
+
+        <h2><span class="k-sprite myfav"></span>Favorites</h2>
+        <div id="head03" class="border_01">
+            <button class="border_01" onclick="lee01()">Load</button>
+            <button class="border_01" onclick="esconde01()">Esconde</button>
+            <button class="border_01" onclick="muestra01()">Muestra</button>
+
+
+            <button style="border-color:red" class="border_01" onclick="type_01()">Branch</button>
+            <button style="border-color:blue" class="border_01" onclick="type_02()">Own Job</button>
+            <button class="border_01" onclick="type_03()">JV</button>
+            <button style="border-color:green" class="border_01" onclick="type_04()">Other</button>
+
+
+        </div>
+        <nav> <button onclick="lee01()">boton</button></nav>
+        <div class=" " onclick="" id="div_box33"></div>
+
+        <iframe id="ifr02" name="ifr02" src="http://s104e7fd.dragados-usa.local:30000/utilities/spool/list.do?method=loadListFrame"></iframe>
+        <iframe id="ifr01" name="ifr01"></iframe>
+
+    </div>
+    <div class="border01 pos01" onclick="hide02()" id="div_box4">
+    </div>
+    <div class="pos01 border01" id="div_favorites">
+        <h2 onclick="crea04() ">Favorites</h2>
+        <hr>
+        <div class=" border01" id="div_favorites2"></div>
+    </div>
+    <div class="foot01 pos01">foot
+
+        <button onclick="security_open(); return false;">Security</button>
+        <button onclick="logOutECMS();">Exit</button>
+
+    </div>
+</div>

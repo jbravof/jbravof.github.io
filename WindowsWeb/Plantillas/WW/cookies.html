@@ -1,0 +1,42 @@
+<div class="master0 master03 div_type01 border_01 style_01">
+    <div class='div_brand'>
+        Cookies
+    </div>
+    <div class=" div_tool01 border_02">
+        <button class="boton02" onclick=" crea02()">Refresh</button>
+        <button class="boton02" onclick=" crea03()">Create_03</button>
+        <button class="boton02" onclick=" crea05(0)">Cookie List</button>
+
+        <button class="boton02" onclick=" crea05(1)">Cookie Update</button>
+        <button class="boton02" onclick=" crea05(2)">Cookie Table</button>
+        <button class="down" onclick="">_</button>
+
+        <button class="max">[]</button>
+        <button class="min" onclick="">X</button>
+
+    </div>
+    <div class=" div_type02 border_02">
+
+        <div class="  border_01">
+            <h2>Cookie List</h2>
+
+
+            <select id="sel01" size="2" class="">
+                </select>
+
+            <hr>
+            <input style="text-align:center" value="Get Cookies" class="boton01" type="button" id="run02" onclick="get_01()">
+        </div>
+        <div id="menu2" class="  border_01">
+            <h2>Cookie Update</h2>
+
+            <p> Cookie</p><input class="  border_01" type="text" id="texto01" value="">
+            <hr>
+            <p> Value</p> <input class="  border_01" type="text" id="texto02" value="">
+            <hr>
+            <input style="text-align:center" value="Update" class="  boton01" type="button" id="run01" onclick="document.cookie = texto01.value + '=' + texto02.value;get_01();">
+        </div>
+
+
+    </div>
+</div>

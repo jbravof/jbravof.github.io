@@ -1,0 +1,358 @@
+#window1 {
+    top: 8px;
+    /* left: 10px; */
+    position: absolute;
+    /* height: -webkit-fill-available; */
+    /* overflow: auto; */
+    /* display: grid; */
+    /* width: initial; */
+    /* min-width: 300px; */
+    /* min-height: 200px; */
+    max-height: 44%;
+    /* bottom: 0px; */
+}
+
+#window2 {
+    top: 10px;
+    right: 20px;
+    position: absolute;
+    /* height: auto; */
+    overflow: auto;
+    /* display: grid; */
+    /* max-height: 42%; */
+}
+
+#window3 {
+    bottom: 42px;
+    left: 10px;
+    position: absolute;
+    /* max-height: 58%; */
+    /* height: 2vh; */
+    /* overflow: auto; */
+    /* display: grid; */
+}
+
+#window4 {
+    bottom: 13%;
+    right: 20px;
+    position: absolute;
+    /* overflow: hidden; */
+    /* display: grid; */
+    /* top: 52%; */
+    /* height: -webkit-fill-available; */
+    /* z-index: 99999999999999999999999999; */
+}
+
+.div_type01 .div_tool01 {
+    padding: 5px;
+    float: right;
+    border-width: 4px;
+    margin-top: -6px;
+    /* z-index: 100; */
+    margin-bottom: 10px;
+}
+
+.border_01 {
+    border: outset;
+    border-radius: 8px;
+    /* position: absolute; */
+}
+
+.border_02 {
+    border: inset;
+    border-radius: 8px;
+}
+
+.style_01 {
+    background: currentColor;
+}
+
+.style_02 {
+    background: white;
+}
+
+.div_type01 {
+    /* min-width: 355px; */
+    /* min-height: 200px; */
+    padding: 9px;
+    /* max-height: 96%; */
+}
+
+
+/*buttons*/
+
+.div_type01 button {
+    background: #09090900;
+    /* color: black; */
+    border: inherit;
+    float: left;
+    font-size: smaller;
+    /* width: auto; */
+}
+
+.div_type02 {
+    /* height: -webkit-fill-available; */
+    /* width: inherit; */
+    /* height: 20vh; */
+    margin-top: 47px;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-height: 223px;
+    min-width: 300px;
+    /* margin-bottom: 0px; */
+    /* max-height: 86%; */
+}
+
+.div_brand {
+    float: left;
+    border: outset;
+    /* color: red; */
+    font-size: xx-small;
+    padding: 6px;
+    border-radius: 8px;
+    background: #fdf6f6;
+    margin: 1px;
+}
+
+#imp_exp {
+    /* display: none; */
+}
+
+.footbar {
+    bottom: 0;
+    /* margin-top: -2%; */
+    /* display: none; */
+    /* float: right; */
+    margin-right: 13px;
+    position: absolute;
+    right: 0;
+}
+
+.toolbar {
+    /* margin-top: 93vh; */
+    /* height: 4vh; */
+    padding-left: 5px;
+    /* display: none; */
+    position: absolute;
+    bottom: 8px;
+    /* z-index: 999999999999999999999999999999999999; */
+    /* left: 43px; */
+}
+
+.toolbar button {
+    background: transparent;
+    font-size: xx-small;
+    border: none 0px;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 13px black;
+}
+
+#window1 .div_type01 {
+    background: #384045;
+    color: #1f213f;
+    /* max-height: 68vh; */
+}
+
+#window1 .div_type02 {
+    /* max-height: unset; */
+    background: wheat;
+    /* height: -webkit-fill-available; */
+    /* overflow: auto; */
+    /* width: 100%; */
+}
+
+#window1 .div_brand {
+    color: #8b0b0b;
+    background: #f7f6f4;
+}
+
+#window1 .div_tool01 {
+    color: red;
+    background: wheat;
+    margin-top: -3px;
+    margin-right: -4px;
+}
+
+#window3 .div_type01 {
+    background: #224153;
+    color: #05050a;
+    height: 100%;
+    overflow: hidden;
+}
+
+#window3 .div_type02 {
+    background: #dfcf82;
+    max-height: 86%;
+}
+
+#window3 .div_tool01 {
+    color: #4a1043;
+    background: #dfcf82;
+    margin-top: -3px;
+    margin-right: -4px;
+}
+
+#window2 .div_brand {
+    color: #8b0b0b;
+    /* background: wheat; */
+}
+
+#window2 .div_type01 {
+    height: 100%;
+    overflow: hidden;
+    background: #9d6e28;
+    color: #05050a;
+    z-index: 99999999999999999999;
+}
+
+#window2 .div_type02 {
+    background: #e7e6e0;
+    /* max-height: 84%; */
+    /* overflow-y: auto; */
+    /* overflow: hidden; */
+}
+
+#window2 .div_tool01 {
+    color: #4a1043;
+    background: #e7e6e0;
+    margin-top: -3px;
+    margin-right: -4px;
+}
+
+#window2 .div_brand {
+    color: #8b0b0b;
+    /* background: wheat; */
+}
+
+.master_window {
+    width: 45%;
+    height: 41%;
+    /* box-shadow: 1px 1px black; */
+    max-height: 94%;
+}
+
+.div_browser {
+    height: -webkit-fill-available;
+    overflow: auto;
+    width: 100%;
+}
+
+.div_browser>div {
+    /* width: auto; */
+    /* border: outset; */
+    /* height: 27px; */
+    margin: 3px;
+    padding: 4px;
+    /* BACKGROUND: silver; */
+}
+
+.div_browser>div>button {
+    margin: 0px;
+    border-radius: 9px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: solid 1px;
+    border-right: none;
+    height: 27px;
+    padding-right: 19px;
+    padding-left: 14px;
+    /* border-top-style: none; */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.div_browser>div input {
+    border-radius: 13px;
+    margin-left: -9px;
+    margin-top: 0.5px;
+    padding-left: 18px;
+    float: left;
+}
+
+.div_browser nav {
+    float: left;
+    margin-top: 2%;
+    /* height: -webkit-fill-available; */
+    /* margin-bottom: 0px; */
+    /* overflow: auto; */
+    width: -webkit-fill-available;
+    /* height: 100%; */
+    /* max-height: 85%; */
+}
+
+.div_browser iframe {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 0px;
+    margin-top: 1%;
+    border-radius: 10px;
+    max-height: 68vh;
+    overflow: auto;
+    /* height: 90vh; */
+}
+
+.master-window-open {
+    max-height: 65%;
+    overflow: auto;
+    max-width: 58%;
+}
+
+.master-window-open .div_type01 {
+    overflow: auto;
+    height: -webkit-fill-available;
+}
+
+.master-window-closed {
+    display: none;
+}
+
+.master-window-max .div_type01 {
+    /* width: 146vh; */
+    height: -webkit-fill-available;
+    /* max-height: unset; */
+}
+
+.master-window-max {
+    position: absolute;
+    height: 96%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    margin-bottom: 0px;
+    overflow: auto;
+    z-index: 9999999999;
+}
+
+.master-window-max .div_type02 {}
+
+.master-window-open .div_type02 {
+    width: 100%;
+    height: -webkit-fill-available;
+    overflow: auto;
+    max-height: 40%;
+}
+
+.cl30 {
+    float: left;
+    border: outset;
+    margin: 6px;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+}
+
+.cl31 {
+    float: left;
+    border: inset;
+    margin: 0px;
+    padding: 12px;
+    border-radius: 10px;
+    background: white;
+}

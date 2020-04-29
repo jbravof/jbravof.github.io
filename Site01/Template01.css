@@ -1,0 +1,126 @@
+body01 {
+    background-color: grey;
+    padding: .5%;
+    border: outset 2px;
+    border-radius: 8px;
+    margin: .4%;
+    box-shadow: 1px 1px 17px 5px #3d3636;
+    height: 98vh;
+}
+
+.border_01 {
+    border: outset;
+    border-radius: 8px;
+}
+
+.border_02 {
+    border: inset;
+    border-radius: 8px;
+}
+
+.over {
+    width: 20px;
+    position: absolute;
+    padding: 1px;
+    z-index: 100;
+    background: transparent;
+    /* box-shadow: -1px 1px 13px red; */
+    top: 3;
+    left: 3;
+    color: white;
+    height: 20px;
+    border: solid 0.4px #eaafaf;
+}
+
+.over1:hover {
+    padding: 30px;
+    border: outset;
+    width: 40px;
+    height: 40px;
+}
+
+#Temp01_master {
+    border: outset;
+    /* height: 93%; */
+    /* margin-top: 0; */
+    position: absolute;
+    top: 1%;
+    bottom: 1%;
+    left: .5%;
+    right: .5%;
+    padding: 0.2%;
+    overflow: auto;
+    /* padding-top: 122px; */
+    background: silver;
+    overflow-x: hidden;
+    display: none;
+}
+
+#Temp01_master .clase01 {
+    height: -webkit-fill-available;
+    /* margin-right: 0px; */
+    /* width: 87vh; */
+    background: white;
+}
+
+#Temp01_master .clase02 {
+    /* height: -webkit-fill-available; */
+    /* margin-right: 0px; */
+    margin: 2%;
+    /* margin-bottom: 88%; */
+    height: 7%;
+    background: wheat;
+}
+
+#Temp01_master .col-sm-3 {
+    /* margin: 1%; */
+    margin-right: 0;
+    margin-bottom: 2.5%;
+    margin-left: -5px;
+}
+
+#Temp01_master .col-sm-9 {
+    /* margin: -1%; */
+    /* width: 74%; */
+    margin-bottom: 2.5%;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+#Temp01_master .clase03 {
+    /* margin-right: 0px; */
+    /* width: 87vh; */
+    /* margin-top: 0; */
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    /* height: 44px; */
+    right: 0;
+    margin: .5%;
+    background: wheat;
+}
+
+#Temp01_master .clase04 {
+    margin: .5%;
+    /* margin-top: 0px; */
+    height: 84%;
+    padding: .5%;
+    border: navajowhite;
+    /* position: absolute; */
+    top: 0;
+}
+
+#Temp01_master .clase05 {
+    /* margin-right: 16px; */
+    /* margin: 2%; */
+    height: 8vh;
+    /* margin-bottom: 0px; */
+    /* margin-top: 4px; */
+    margin-left: 16px;
+    width: 97%;
+    background: aliceblue;
+    /* height: -webkit-fill-available; */
+    /* z-index: 10000000000; */
+    position: absolute;
+    /* bottom: -69%; */
+}

@@ -1,0 +1,357 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="test2.css">
+
+<script src="eCMSdevAPP.js"></script>
+<style>
+
+</style>
+<!-- Rounded switch -->
+<nav id="navmaster">
+    <p>Load</p>
+    <label class="switch border_01">
+      <input onclick="switch05(this.id)" type="checkbox" id="sw011" unchecked>
+      <span class="slider round"></span>
+    </label>
+</nav>
+<div id="master" class="container-fluid">
+
+    <div class="row div_top">
+        <div class="col-sm-4">
+            <div id="head04" style="    display: flex;" class="head03 border01">
+
+
+                <button onclick="iframe_01()">Spool</button>
+                <button onclick=" div_hide01('idi')">favoritos</button>
+            </div>
+        </div>
+        <div style="    margin: -2px;background: transparent;" class="col-sm-4">
+            <div id="div_box30" class="head03  ">
+                <div id="head02" class="border_01">
+                    <!-- Rounded switch -->
+                    <nav>
+                        <p>Load</p>
+                        <label class="switch border_01">
+      <input onclick="switch01(this.id)" type="checkbox" id="sw01" unchecked>
+      <span class="slider round"></span>
+    </label>
+                    </nav>
+                    <button class="border_01" onclick="div_hide02()">Close All</button>
+
+                    <button class="border_01" onclick=" div_hide01('spool')">Spool</button>
+                    <button class="border_01" onclick=" div_hide01('favorites');show01()"><span class="k-sprite myfav"></span>Favorites</button>
+                    <button class="border_01" onclick=" div_hide01('parameters')">Parameters</button>
+                    <button class="border_01" onclick=" div_hide01('cookies')">cookies</button>
+
+
+                    <!-- <button style="border-color:red" class="border_01" onclick="show01()">show01</button> -->
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div id="div_favorites22" class="head03  border02"></div>
+        </div>
+
+    </div>
+    <div class="row div_content">
+        <div id="col01" class="col-sm-4">
+            <div class="col-sm-3">
+                <div style="height: 10vh;" class="row">
+                    <div class="head03  ">
+                        <button class="border_01 btn01" onclick=" div_hide01('favorites');show01()"><span class="k-sprite myfav"></span>Favorites</button>
+
+                        <button class="btn01" id="btn01" onclick="tool01()">
+         <img src="/ecms/images/4.1/settings.png" title="Applications" class="handcursor k-image" alt="">   Menu
+            </button>
+                    </div>
+                </div>
+                <div style="height: 70vh;" class="row">
+                    <div id="div_box" class="head03  border01"></div>
+                </div>
+
+            </div>
+            <div class="col-sm-9">
+                <div style="height: 10vh;" class="row">
+                    <div style="display:none" id="div_box2" class="head03  border01"></div>
+                    <div id="div_box2bis" class="head03  "></div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div id="div_box_2" class="head03  "></div>
+
+                </div>
+                <div class="col-sm-8">
+
+                    <div style="height: 30vh;" class="row">
+                        <div id="div_box25" class="head03  "></div>
+
+                    </div>
+                    <div style="height: 40vh;" class="row">
+                        <div id="div_box4" class="head03  border01"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="spool" class="div_hide col-sm-8">
+
+            <div id="row01" class="row">
+
+                <div class="col-sm-4">
+
+                    <div class="row">
+                        <div id="head03" class="border_01">
+                            <button class="border_01" onclick="lee01()">Load</button>
+                            <button class="border_01" onclick="iframe_01()">Sppol</button>
+                            <button class="border_01" onclick="muestra01()">Muestra</button>
+
+
+                            <button style="border-color:red" class="border_01" onclick="type_01()">Branch</button>
+                            <button style="border-color:blue" class="border_01" onclick="type_02()">Own Job</button>
+                            <button class="border_01" onclick="type_03()">JV</button>
+                            <button style="border-color:green" class="border_01" onclick="type_04()">Other</button>
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="border01 pos01" onclick="hide02()" id="div_box3">
+
+                            <h2><span class="k-sprite myfav"></span>Favorites</h2>
+
+                            <nav> <button onclick="lee01()">boton</button></nav>
+                            <div class=" " onclick="" id="div_box33"></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+
+
+                    <iframe id="ifr02" name="ifr02" src="http://s104e7fd.dragados-usa.local:30000/utilities/spool/list.do?method=loadListFrame"></iframe>
+                    <iframe id="ifr01" name="ifr01"></iframe>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div id="favorites" class="div_hide col-sm-8">
+
+            <div id="row03" class="row">
+
+                <div class="col-sm-4">
+
+                    <div class="row">
+                        <div style="background: white;" id="fav01" class="border_01 head0 ">
+                            <p onclick="crea04() ">Favorites</p>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div style="overflow: auto;background: white" class="border_01 head0" onclick="" id="div_favorites2">
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="row">
+                        <div style="height: 500px;overflow: auto;background: white" id="fav02" class="border_01 ">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div id="parameters" class="div_hide col-sm-8">
+            <div class="row header_01 " id="div02">
+                <button class="border_01" onclick="func02()">uno!</button>
+                <button class="border_01" onclick="run04()">run04!</button>
+
+            </div>
+            <div class="row st_00">
+
+                <div class="col-sm-3">
+                    <div class=" st_01">
+                        <p onclick="hide03('select_01')"> Favorites:</p> <input id="check01" type="checkbox">Auto
+                        <div class="row border_01 st_03">
+
+                            <select onclick="setTimeout(function() {pon01();tool04();},500)" id="select_01" onchange="change01();" class="sel_01" size="3" value="">
+                                <option value="4;9">Trial Balance</option>
+                                <option value="13;5">SIE</option>
+                                <option value="5;7">Job Economic Detail</option>
+                                <option>Schiavone</option>
+                                <option>JFwhite</option>
+                                <option>Pulice</option>
+                                <option>Prince</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                                <option>Option</option>                        </select>
+                        </div>
+                        <hr>Report List:
+                        <div onclick="setTimeout(function() {pon01();tool04();},500)" class="row border_01 st_03" id="div06">
+
+                        </div>
+                        <hr>
+                        <p onclick="hide03('div012')">Parameters:</p>
+                        <div class=" border_01 st_03" id="div012">
+                            <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Month:"> <input id="mon01" style="padding:5px;width:60%;margin-left:5px;" class="border_01" type="text" value="2" />
+
+                            <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Year:"> <input id="year01" style="padding:5px;width:60%;margin-left:5px;" class="border_01" type="text" value="2020" />
+                            <hr>
+                            <input style="padding:5px;width:75%;margin-left:25px;" class="border_01" onclick="run05();run06();" type="button" value="Send">
+                            <hr>
+                            <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Job:"><select id="sel_01" class="border_01" style="padding:5px;width:60%;margin-left:5px;">
+        <option>8/4 - Durham Connector</option>
+        <option>8/3 - Winston Beltway</option>
+        </select><br>
+                            <hr>
+                            <input style="padding:5px;width:75%;margin-left:25px;" class="border_01" onclick="run08();" type="button" value="Send">
+                            <hr>
+                            <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Co:"> <input id="input_co" style="padding:5px;width:60%;margin-left:5px;" class="border_01" type="text" value="094" />
+                            <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Div:"> <input id="input_div" style="padding:5px;width:60%;margin-left:5px;" class="border_01" type="text" value="1" />
+                            <hr>
+                            <input style="padding:5px;width:75%;margin-left:25px;" class="border_01" onclick="run07();" type="button" value="Send">
+                            <input style="padding:5px;width:75%;margin-left:25px;" class="border_01" onclick="run05();run06();run08();run07();" type="button" value="Run">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-4">
+                    <div class="border_01 st_01">
+        
+                    </div>
+                </div> -->
+                <div style="margin-left: -20px;height:25vh;" class="col-sm-9">
+                    <div id="col02" onclick="hide01()" class="border_01 st_01" style="border: inset;border: inset;font-size: larger;text-align: center;overflow:hidden;">
+                        <!-- <iframe id="ifr01" name="ifr01" src="https://drt.dragados-usa.local/" > -->
+
+                        </iframe>
+                    </div>
+
+                    <div id="col03" class="" style="border: none;font-size: larger;text-align: center;overflow:hidden;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cookies" class="div_hide col-sm-8">cookie
+            <div id='cont01' class="container-fluid ">
+                <div class="row row01">
+                    <div class="master ">
+                        <button class="boton02" onclick=" crea02()">Refresh</button>
+                        <button class="boton02" onclick=" crea03()">Create_03</button>
+                        <button class="boton02" onclick=" crea05(0)">Cookie List</button>
+
+                        <button class="boton02" onclick=" crea05(1)">Cookie Update</button>
+                        <button class="boton02" onclick=" crea05(2)">Cookie Table</button>
+
+
+                    </div>
+                </div>
+                <div class="row row02">
+                    <div class="col-sm-4">
+                        <div class=" master border_01">
+                            <h2>Cookie List</h2>
+
+
+                            <select id="sel01" size="2" class="">
+                            </select>
+
+                            <hr>
+                            <input style="text-align:center" value="Get Cookies" class="boton01" type="button" id="run02" onclick="get_01()">
+                        </div>
+                        <div id="menu2" class=" master border_01">
+                            <h2>Cookie Update</h2>
+
+                            <p> Cookie</p><input class="  border_01" type="text" id="texto01" value="">
+                            <hr>
+                            <p> Value</p> <input class="  border_01" type="text" id="texto02" value="">
+                            <hr>
+                            <input style="text-align:center" value="Update" class="  boton01" type="button" id="run01" onclick="document.cookie = texto01.value + '=' + texto02.value;get_01();">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="row row01">
+                            <div class="master border_01"></div>
+                        </div>
+                        <div class="row row03">
+
+                            <div class="col-sm-12">
+                                <div class=" master border_01">
+                                    <h2>Cookie Table</h2>
+
+                                    <div id="div_07" class=" master "></div>
+                                    <hr>
+                                    <input style="text-align:center" value="Create" class="  boton01" type="button" id="run011" onclick="crea01()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="idi" class="div_hide col-sm-8">cookie
+            <div class="row row01">
+                <div class="master ">
+
+                </div>
+                <div class="row row02">
+                    <div class="col-sm-4">
+                        <div class=" master border_01">
+                            <h2>Cookie List</h2>
+
+
+                            <select id="sel0111" size="2" class="">
+                            </select>
+
+                            <hr>
+                            <input style="text-align:center" value="Get Cookies" class="boton01" type="button" id="run0211" onclick="get_01()">
+                        </div>
+                        <div id="menu211" class=" master border_01">
+                            <h2>Cookie Update</h2>
+
+                            <p> Cookie</p><input class="  border_01" type="text" id="texto0111" value="">
+                            <hr>
+                            <p> Value</p> <input class="  border_01" type="text" id="texto0211" value="">
+                            <hr>
+                            <input style="text-align:center" value="Update" class="  boton01" type="button" id="run0111" onclick="document.cookie = texto0111.value + '=' + texto0211.value;get_01();">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row div_bottom">
+        <div class="foot01 pos01">foot
+
+            <button onclick="security_open(); return false;">Security</button>
+            <button onclick="logOutECMS();">Exit</button>
+
+        </div>
+
+    </div>
+
+</div>

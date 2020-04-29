@@ -1,0 +1,228 @@
+/*Borders*/
+
+.border_01 {
+    border: outset;
+    border-radius: 8px;
+    /* position: absolute; */
+}
+
+.border_02 {
+    border: inset;
+    border-radius: 8px;
+}
+
+.style_01 {
+    background: currentColor;
+}
+
+.style_02 {
+    background: white;
+}
+
+
+/*Overall button*/
+
+.over {
+    width: 20px;
+    position: absolute;
+    padding: 1px;
+    z-index: 100;
+    background: transparent;
+    /* box-shadow: -1px 1px 13px red; */
+    top: 3;
+    left: 3;
+    color: white;
+    height: 20px;
+    border: solid 0.4px #eaafaf;
+}
+
+.over:hover {
+    padding: 30px;
+    border: outset;
+    width: 40px;
+    height: 40px;
+}
+
+
+/*simple div*/
+
+.div_type01 {
+    width: 165%;
+    height: 42vh;
+    margin-top: 2%;
+    margin-left: 2%;
+    padding: 10px;
+    z-index: 0;
+    position: absolute;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.master02 {
+    width: 47%;
+    height: 46%;
+    margin-top: 0px;
+    /* margin-left: 50%; */
+    padding: 10px;
+}
+
+.div_type01 .div_tool01 {
+    padding: 5px;
+    float: right;
+    border-width: 4px;
+    margin-top: -6px;
+    z-index: 100;
+}
+
+
+/*buttons*/
+
+.div_type01 button {
+    background: #d15757;
+    color: yellow;
+    border: inherit;
+    float: left;
+}
+
+.div_type01 div {
+    /* height: 81%; */
+    /* width: 94%; */
+    /* overflow: auto; */
+    /* margin-top: 55px; */
+    /* margin-left: 25px; */
+}
+
+.div_type01 span {}
+
+.div_type01 .div_type02 {
+    /* width: 100%; */
+    /* height: 200px; */
+    /* margin-bottom: 5px; */
+    /* padding: 10px; */
+    /* margin-top: 44px; */
+    /* margin-left: 4px; */
+    /* margin-right: 4px; */
+}
+
+
+/*other div*/
+
+.div_type02 {
+    /* height: -webkit-fill-available; */
+    position: absolute;
+    top: 51px;
+    left: 5px;
+    right: 5px;
+    bottom: 6px;
+}
+
+
+/*buttons*/
+
+.div_type02 button {
+    background: transparent;
+    color: blue;
+    border: inherit;
+}
+
+.div_type02 div {}
+
+.div_type02 span {}
+
+.style_01 .div_type02 {
+    background: darkslateblue;
+}
+
+.style_01>.div_type02 button {
+    background: transparent;
+    color: rgb(255, 60, 0);
+}
+
+.div_tool01>button {}
+
+#imp_exp {
+    display: none;
+}
+
+.toolbar .div_type01 {
+    /* width: 79px; */
+    /* height: 43px; */
+    /* overflow: hidden; */
+}
+
+.master0 {
+    /* position: absolute; */
+    /* width: 104%; */
+    /* height: 70%; */
+    /* overflow: hidden; */
+    /* min-width: 445px; */
+    /* min-height: 223px; */
+}
+
+.master03 {
+    /* position: absolute; */
+    /* width: 46%; */
+    /* height: 47%; */
+    /* bottom: 4%; */
+    /* right: 1%; */
+    /* overflow: auto; */
+    /* padding-top: 7px; */
+    /* padding: 8px; */
+}
+
+.master03 .div_type02 {
+    margin-top: 47px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    overflow: auto;
+}
+
+.master02 .div_type02 {
+    margin-top: 47px;
+    /* margin-bottom: 2px; */
+    margin-left: 2px;
+    margin-right: 2px;
+    overflow: auto;
+}
+
+.div_brand {
+    float: left;
+    border: outset;
+    color: red;
+    font-size: xx-small;
+    padding: 6px;
+    border-radius: 8px;
+    background: transparent;
+    margin: 1px;
+}
+
+#window1 {
+    top: 34px;
+    left: 0;
+    position: absolute;
+    height: auto;
+    overflow: auto;
+    display: grid;
+    /* width: initial; */
+    /* min-width: 300px; */
+    /* min-height: 200px; */
+}
+
+#window2 {
+    /* top: 35px; */
+    /* right: 34px; */
+    position: absolute;
+}
+
+#window3 {
+    bottom: 35px;
+    left: 0;
+    position: absolute;
+}
+
+#window4 {
+    bottom: 35px;
+    right: 0;
+    position: absolute;
+}

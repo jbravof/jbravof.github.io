@@ -1,0 +1,271 @@
+<style>
+    #vistaPrevia div,
+    div.GrupoLanzamiento {
+        background: black;
+        color: lawngreen;
+    }
+    
+    .Parametro {
+        padding: 15px;
+        left: -1%;
+        top: 1%;
+        display: inline-block;
+        width: 60%;
+        border: outset;
+        border-radius: 10px;
+        background: #86868f;
+    }
+    
+    select,
+    #div06 {
+        width: 100%;
+        border: inset;
+        border-radius: 11px;
+        padding: 10px;
+        background: black;
+        color: yellow;
+        font-size: small;
+    }
+    
+    input {
+        background: black;
+        color: yellow;
+    }
+    
+    #NombreInforme {
+        display: none;
+        width: 100%;
+        border: none;
+        border-radius: 11px;
+        padding: 10px;
+    }
+    
+    body {
+        overflow: hidden;
+    }
+    
+    .master {
+        position: absolute;
+        top: 73px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+        border: none;
+        background: black;
+        display: block;
+    }
+    
+    #cont00 {
+        display: none;
+    }
+    
+    #div02 div,
+    #div02 button {
+        font-size: small;
+        border-radius: 25%;
+        margin: 0.2%;
+        width: 5%;
+        float: right;
+        padding-top: 5px;
+        background: transparent;
+        color: red;
+        border: solid 2px yellow;
+    }
+    
+    .border_01 {
+        border: outset;
+        border-radius: 10px;
+    }
+    
+    .header_01 {
+        height: 7vh;
+        margin: 0.3%;
+        padding: 5px;
+        overflow: overlay;
+        justify-content: space-evenly;
+    }
+    
+    .st_00 {
+        height: 85vh;
+        padding-top: 0.5%;
+    }
+    
+    .st_01 {
+        border: inset;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 0;
+        overflow: auto;
+        background: black;
+        color: lawngreen;
+    }
+    
+    .ParametroControl input {
+        border: inset;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+    }
+    
+    .st_03 {
+        height: auto;
+        margin: 1%;
+        overflow: auto;
+        padding: 5px;
+    }
+    
+    .sel_01 {
+        width: 100%;
+        border: inset;
+        border-radius: 11px;
+        padding: 10px;
+    }
+    
+    #ifr01 {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    #div06,
+    #div012 {
+        padding: 5px;
+        max-height: 18vh;
+    }
+    
+    .DescripcionInforme {
+        display: none;
+    }
+    
+    .GrupoLanzamiento {
+        display: flex;
+        padding: 2%;
+        padding-right: 4%;
+        width: 100%;
+        height: 75%;
+        overflow: auto;
+        border: outset;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .GrupoLanzamiento .TituloGrupoLanzamiento {
+        width: 25%;
+    }
+    
+    .ContenidoGrupoLanzamiento {
+        width: 100%;
+    }
+    
+    .cl02 {
+        background: #dbd6d6;
+        width: 45%;
+        position: absolute;
+        bottom: 0;
+        height: 20%;
+    }
+    
+    .cl03 {
+        background: #dbd6d6;
+        width: 45%;
+        margin-left: 50%;
+        position: absolute;
+        height: 20%;
+        bottom: 0;
+        background: #dbd6d6;
+        width: 45%;
+        margin-left: 50%;
+    }
+    
+    #col02>div {
+        display: none;
+    }
+    
+    #cont01 {
+        z-index: 5000000000000000000000000000000000000;
+        display: none;
+    }
+    
+    #LanzamientoInforme {
+        background: black;
+    }
+</style>
+
+
+
+<div id="parametros">
+
+
+    <div class="row header_01 " id="div02">
+        <button class="border_01" onclick="func02()">uno!</button>
+        <button class="border_01" onclick="run04()">run04!</button>
+
+    </div>
+    <div class="row st_00">
+
+        <div class="col-sm-3">
+            <div class=" st_01">
+                <p onclick="hide03('select_01')"> Favorites:</p> <input id="check01" type="checkbox">Auto
+                <div class="row border_01 st_03">
+
+                    <select onclick="setTimeout(function() {pon01();tool04();},500)" id="select_01" onchange="change01();" class="sel_01" size="3" value="">
+                        <option value="4;9">Trial Balance</option>
+                        <option value="13;5">SIE</option>
+                        <option value="5;7">Job Economic Detail</option>
+                        <option>Schiavone</option>
+                        <option>JFwhite</option>
+                        <option>Pulice</option>
+                        <option>Prince</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>                        </select>
+                </div>
+                <hr>Report List:
+                <div onclick="setTimeout(function() {pon01();tool04();},500)" class="row border_01 st_03" id="div06">
+
+                </div>
+                <hr>
+                <p onclick="hide03('div012')">Parameters:</p>
+                <div class=" border_01 st_03" id="div012">
+                    <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Month:"> <input id="mon01" style="padding:5px;width:60%;margin-left:5px;" class="border_01" type="text" value="2" />
+
+                    <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Year:"> <input id="year01" style="padding:5px;width:60%;margin-left:5px;" class="border_01" type="text" value="2020" />
+                    <hr>
+                    <input style="padding:5px;width:75%;margin-left:25px;" class="border_01" onclick="run05();run06();" type="button" value="Send">
+                    <hr>
+                    <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Job:"><select id="sel_01" class="border_01" style="padding:5px;width:60%;margin-left:5px;">
+<option>8/4 - Durham Connector</option>
+<option>8/3 - Winston Beltway</option>
+</select><br>
+                    <hr>
+                    <input style="padding:5px;width:75%;margin-left:25px;" class="border_01" onclick="run08();" type="button" value="Send">
+                    <hr>
+                    <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Co:"> <input id="input_co" style="padding:5px;width:60%;margin-left:5px;" class="border_01" type="text" value="094" />
+                    <input style="padding:5px;width:25%;margin-left:5px;" class="border_01" value="Div:"> <input id="input_div" style="padding:5px;width:60%;margin-left:5px;" class="border_01" type="text" value="1" />
+                    <hr>
+                    <input style="padding:5px;width:75%;margin-left:25px;" class="border_01" onclick="run07();" type="button" value="Send">
+                    <input style="padding:5px;width:75%;margin-left:25px;" class="border_01" onclick="run05();run06();run08();run07();" type="button" value="Run">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-sm-4">
+            <div class="border_01 st_01">
+
+            </div>
+        </div> -->
+        <div style="margin-left: -20px;height:25vh;" class="col-sm-9">
+            <div id="col02" onclick="hide01()" class="border_01 st_01" style="border: inset;border: inset;font-size: larger;text-align: center;overflow:hidden;">
+                <!-- <iframe id="ifr01" name="ifr01" src="https://drt.dragados-usa.local/" > -->
+
+                </iframe>
+            </div>
+
+            <div id="col03" class="" style="border: none;font-size: larger;text-align: center;overflow:hidden;">
+
+            </div>
+        </div>
+    </div>
+</div>

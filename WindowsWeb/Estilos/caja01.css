@@ -1,0 +1,50 @@
+.caja {
+    /* width: 194px; */
+    height: auto;
+    overflow: auto;
+    /* max-height: 80vh; */
+}
+
+.border_outset {
+    border: outset;
+    border-radius: 20px;
+}
+
+.caja .barra_top {
+    height: 20px;
+    height: 20px;
+    margin: 3px;
+}
+
+.caja .content {
+    margin-top: 0px;
+    margin-bottom: 35px;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    margin-right: 3px;
+    margin-left: 3px;
+    position: absolute;
+}
+
+.caja02 {
+    height: -webkit-fill-available;
+    /* margin: -8px; */
+}
+
+body {
+    overflow: hidden;
+}
+
+.izda {
+    height: inherit;
+    width: 20%;
+    float: left;
+}
+
+.dcha {
+    height: -webkit-fill-available;
+    width: 79%;
+    float: right;
+    margin-top: -405px;
+    margin-bottom: 85.5%;
+}

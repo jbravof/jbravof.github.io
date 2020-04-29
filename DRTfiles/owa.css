@@ -1,0 +1,52 @@
+.div_011 {
+    /* border-radius: 20px; */
+    /* border: outset; */
+    /* height: 100vh; */
+}
+
+.div_02 {
+    border-radius: 20px;
+    border: outset;
+    float: left;
+    width: 200px;
+    /* height: 300px; */
+    margin: 10px;
+    overflow: auto;
+    padding: 1%;
+}
+
+#div_tool {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border: outset;
+}
+
+#div_01 {
+    margin-top: 3%;
+}
+
+body {
+    height: 100vh;
+    overflow: auto;
+}
+
+.div_02 p {
+    border: outset;
+    border-radius: 10px;
+    padding: 4%;
+    margin: -3%;
+    margin-bottom: 5%;
+}
+
+h3 {
+    overflow: auto;
+    /* width: 100%; */
+    border: outset;
+    border-radius: 10px;
+    /* position: fixed; */
+    margin: -1%;
+    text-align: center;
+    font-size: smaller;
+    padding: 2%;
+}

@@ -1,0 +1,183 @@
+div#div_07 {
+    max-height: 65%;
+    overflow: auto;
+}
+
+hr {
+    /* margin-top: 1rem; */
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid #3a3333;
+}
+
+h2,
+h3 {
+    text-align: center;
+    background: #551414;
+    border-radius: 13px;
+    margin-bottom: 17px;
+}
+
+#texto01,
+#texto02 {
+    border: inset;
+    width: 70%;
+    margin-right: 2%;
+    float: right;
+    color: lawngreen;
+    border-radius: 14px;
+    margin-top: -50px;
+}
+
+body {
+    height: 100vh;
+    background: black;
+    color: white;
+}
+
+.border_01 {
+    border: outset;
+    border-radius: 20px;
+    border-right-style: double;
+}
+
+.td01 {
+    border: outset;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.td02 {
+    border: inset;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 5px;
+    color: lawngreen;
+    width: -webkit-fill-available;
+}
+
+.master {
+    /* height: 100%; */
+    width: 100%;
+    padding: 5px;
+}
+
+.row01 {
+    height: 10vh;
+    padding: 1%;
+}
+
+.row02 {
+    height: 90vh;
+    padding: 1%;
+}
+
+.row03 {
+    height: 78vh;
+    padding: 1%;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    overflow: auto;
+    background: transparent;
+    color: white;
+    height: 200px;
+    overflow-x: hidden;
+    border: outset 5px black;
+    /* margin: 0; */
+    margin-top: -15px;
+    margin-bottom: -15px;
+    border-radius: 20px;
+}
+
+option {
+    border: outset;
+    border-radius: 15px;
+    padding: 13px;
+    margin: 12px;
+}
+
+option:hover {
+    background: red;
+}
+
+.master button {
+    border: outset;
+    border-radius: 10px;
+    /* margin:5px; */
+}
+
+input {
+    width: 100%;
+    text-align: -webkit-center;
+    /* border: inset; */
+    background: transparent;
+    color: white;
+}
+
+#div_07 tr {
+    border: outset;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    table-layout: auto;
+    display: flex;
+    width: 100%;
+}
+
+#div_07 .td01 {
+    border: outset;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 100px;
+    text-align: center;
+    font-size: small;
+}
+
+#div_07 .td02 {
+    border: inset;
+    border-radius: 20px;
+    margin-left: 10px;
+    /* width: 70%; */
+    padding-left: 8px;
+}
+
+table {
+    /* border-collapse: collapse; */
+    width: 95%;
+}
+
+.boton01 {
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 7px;
+    border: outset;
+    padding: 1%;
+    margin-top: -1%;
+    margin-bottom: 2%;
+}
+
+.boton02 {
+    background: transparent;
+    color: yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#menu2 {
+    margin-top: 10px;
+    /* background: #410505; */
+    /* height: 249px; */
+}
+
+#table1 {
+    display: contents;
+}
+
+#menu2 p {
+    /* float:left; */
+    width: auto;
+    margin-left: 10px;
+}
