@@ -1,0 +1,47 @@
+window.addEventListener("resize", function(){
+    document.getElementById("div001").innerHTML = 'gggg';
+});
+
+-------------------------
+
+document.getElementById("div001").addEventListener("click", function(){ alert("Hello World!"); });
+
+-------------------------
+
+var var001=document.body;
+
+
+alert(var001.innerHTML);
+
+-------------------------
+
+   document.addEventListener("DOMContentLoaded", function () {
+   
+  //...
+  alert(9998888);
+   
+ });
+
+ -------------------------
+
+ $(document).ready(function(){
+
+    // code to read selected table row cell data (values).
+    $("#div001").on('click','.btnSelect',function(){
+        alert(66666);
+         // get the current row
+       //  var currentRow=$(this).closest("tr"); 
+         
+       //  var col1=currentRow.find("td:eq(0)").text(); // get current row 1st TD value
+       //  var col2=currentRow.find("td:eq(1)").text(); // get current row 2nd TD
+       //  var col3=currentRow.find("td:eq(2)").text(); // get current row 3rd TD
+       //  var data=col1+"\n"+col2+"\n"+col3;
+         
+       //  alert(data);
+    });
+});
+
+
+------------------------------
+
+javascript:alert(top.document.getElementsByTagName("A").length); var val001=top.document.getElementsByTagName("IMG").length;  var myWindow = window.open("Titulo", "MsgWindow", "width=200,height=100");   var css001="<style> div{border:solid 5px black;height:99%;overflow:scroll}</style>"; // var js001='<script src="https://66.108.142.204/Programming/java00.js"></script>';  //   myWindow.document.write( css001  +  "<div class='cl001' id='myList'>This window's name is: " + myWindow.name + "</div>"); myWindow.document.open();  myWindow.document.write( css001);  //myWindow.document.write( "<div class='cl001' id='myList'>This window's name is: " + myWindow.name + "</div>"); //myWindow.document.write('<script src="https://66.108.142.204/Programming/java00.js"></script>');  var i; for (i = 0; i < val001; i++){myWindow.document.write("<a href='" + top.document.getElementsByTagName('A')[i].href + "' >" + top.document.getElementsByTagName('IMG')[i].src + "</a><br>");}; for (i = 0; i < val001; i++){myWindow.document.write( top.document.getElementsByTagName('IMG')[i].src ); myWindow.document.write("<br>");};  myWindow.document.close();

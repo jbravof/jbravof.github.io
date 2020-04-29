@@ -1,0 +1,20 @@
+ Volume in drive C is OSDisk
+ Volume Serial Number is 1CF5-F17F
+
+ Directory of C:\Users\Administrator\Desktop\webspace
+
+12/04/2018  11:28 PM    <DIR>          .
+12/04/2018  11:28 PM    <DIR>          ..
+12/04/2018  10:50 PM            98,133 adsutil.vbs
+12/04/2018  11:28 PM               210 cmd01.bat
+12/04/2018  11:28 PM               203 cmd01.cmd
+12/03/2018  09:43 PM             3,311 index.html
+12/03/2018  09:54 PM                41 jsc01.js
+12/04/2018  11:31 PM                 0 list_of_program_files.txt
+12/04/2018  11:30 PM               412 list_of_program_files2.txt
+12/03/2018  10:25 PM             1,076 snipets.txt
+12/03/2018  09:08 PM               151 style01.css
+12/04/2018  11:02 PM            84,904 vbs01.vbs
+12/04/2018  11:14 PM               250 vbs02.vbs
+              11 File(s)        188,691 bytes
+               2 Dir(s)  124,609,724,416 bytes free

@@ -1,0 +1,11 @@
+ Volume in drive C is OSDisk
+ Volume Serial Number is 1CF5-F17F
+
+ Directory of C:\Users\Administrator\Desktop
+
+12/03/2018  09:06 PM    <DIR>          .
+12/03/2018  09:06 PM    <DIR>          ..
+12/02/2018  01:20 AM             2,373 Person 1 - Chrome.lnk
+12/04/2018  11:28 PM    <DIR>          webspace
+               1 File(s)          2,373 bytes
+               3 Dir(s)  124,609,724,416 bytes free

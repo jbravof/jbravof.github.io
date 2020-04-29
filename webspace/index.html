@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap 4 Website Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="http://localhost/webspace%20-%20Copy/js/jsc01.js"></script>
+       <base href="" target="ifr001">
+
+        <style>
+            .fakeimg {
+                height: 200px;
+                background: #aaa;
+                padding: 5px;
+            }
+
+            iframe {
+                width: 100%;
+                border-radius: 15px;
+                height: 100%;
+                
+               
+            }
+            a{
+                margin:5px;
+            }
+            .col-sm-4{
+
+                border:solid 0px blue;
+                overflow:scroll;
+            }
+            .col-sm-8{
+                overflow:hidden;
+            }
+        </style>
+        <script>
+
+            uno();
+        </script>
+    </head>
+    <body>
+        <div id="div001"  style="margin-bottom:0">
+            <h1>My First Bootstrap 4 Page jejeje</h1>
+            <p>Resize this responsive page to see the effect!</p>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        adios
+        <div class="container" style="margin-top:30px">
+        <div class="row">
+        <div class="col-sm-4">
+            <a class="btn btn-primary btn-xs" href="vbs/vbs02.vbs">vbs02.vbs</a>
+            <br/>
+            <a class="btn btn-primary btn-small" href="https://www.wikihow.com/Write-a-Batch-File">www.wikihow.com</a>
+            <br/>
+            <a class="btn btn-primary" href="https://www.robvanderwoude.com/batexamples.php">www.robvanderwoude.com</a>
+            <br/>
+            <a class="btn btn-primary" href="http://steve-jansen.github.io/guides/windows-batch-scripting/part-1-getting-started.html">steve-jansen.github.io</a>
+            <br/>
+            <a class="btn btn-primary" href="https://www.howtogeek.com/263177/how-to-write-a-batch-script-on-windows/">www.howtogeek.com</a>
+            <br/>
+            <a class="btn btn-primary" href="https://commandwindows.com/batch.htm">commandwindows.com</a>
+            <br/>
+            <a class="btn btn-primary" href="vbs/vbs02.vbs">link</a>
+            <br/>
+
+        </div>
+        <div class="col-sm-8">
+        <iframe name="ifr001"  id="ifr001"></iframe>
+        </div>
+        </div>
+        </div>
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <p>Footer</p>
+        </div>
+        <script language="javascript" type="text/javascript">
+
+            function RunEXE(prog) {
+                var oShell = new ActiveXObject("WScript.Shell");
+                oShell.Run('"' + prog + '"', 1);
+            }
+
+            RunEXE("C:\Windows\notepad.exe");
+            ////  var activeXObj = new ActiveXObject("Shell.Application");
+            //  activeXObj.ShellExecute("C:\WINDOWS\NOTEPAD.EXE", "", "", "open", "1");
+        </script>
+        <script language="javascript" type="text/javascript">
+            var activeXObj = new ActiveXObject("Shell.Application");
+            activeXObj.ShellExecute("C:\WINDOWS\NOTEPAD.EXE", "", "", "open", "1");
+        </script>
+    </body>
+</html>
