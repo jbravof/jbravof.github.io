@@ -1,0 +1,21 @@
+<html>
+<applet archive="IO.jar" code="IO.class" name="io" width="0" height="0"></applet>
+<script type="text/javascript">
+ 
+function saveText() {
+    var strFile = document.getElementById("file").value;;
+    var strText = document.getElementById("text").value;
+    document.applets[0].write(strFile, strText);
+}
+ 
+function loadText() {
+    var strFile = document.getElementById("file").value;;
+    document.getElementById("text").value = document.applets[0].load(strFile);
+}
+ 
+</script>
+<input type="text" id="file" value="C:\testscript01.txt" /><br />
+<textarea rows="25" cols="100" id="text">text</textarea><br />
+<input type="button" value="Save" onclick="saveText()" />
+<input type="button" value="Load" onclick="loadText()" />
+</html>

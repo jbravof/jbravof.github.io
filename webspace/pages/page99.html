@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1"> 
+<title>Show Local Folder File List</title> 
+</head> 
+<body> 
+<div> 
+<script type="text/JScript"> 
+//note this is JScript, not javascript. Thus the 'type="text/JScript"' in the script tags 
+
+function ShowFolderFileList(folderspec){ 
+var fso, f, fc, s; 
+fso = new ActiveXObject("Scripting.FileSystemObject"); 
+f = fso.GetFolder(folderspec); 
+fc = new Enumerator(f.files); 
+s = ""; 
+for (; !fc.atEnd(); fc.moveNext()) { 
+s += fc.item(); 
+s += "<br>"; 
+} 
+return s; 
+} 
+
+//note folder/file paths should use the local windows style backslash and be escaped '\\' : 
+var fileList = ShowFolderFileList('C:\\fred'); 
+document.write(fileList); 
+
+</script> 
+</div> 
+</body> 
+</html>

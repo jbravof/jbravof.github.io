@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="yes"?>
+<Person>
+  <Person>
+    <FirstName>Ginger</FirstName>
+    <LastName>Huang</LastName>
+    <Street>507 - 20th Ave. E.
+Apt. 2A</Street>
+  </Person>
+  <Person>
+    <FirstName>Jami</FirstName>
+    <LastName>Watts</LastName>
+    <Street>908 W. Capital Way</Street>
+  </Person>
+  <Person>
+    <FirstName>Erika</FirstName>
+    <LastName>English</LastName>
+    <Street>722 Moss Bay Blvd.</Street>
+  </Person>
+  <Person>
+    <FirstName>Jeffrey</FirstName>
+    <LastName>Cole</LastName>
+    <Street>4110 Old Redmond Rd.</Street>
+  </Person>
+  <Person>
+    <FirstName>Tania</FirstName>
+    <LastName>Hardin</LastName>
+    <Street>14 Garrett Hill</Street>
+  </Person>
+  <Person>
+    <FirstName>Ginger</FirstName>
+    <LastName>Torres</LastName>
+    <Street>Coventry House
+Miner Rd.</Street>
+  </Person>
+  <Person>
+    <FirstName>Frank</FirstName>
+    <LastName>Todd</LastName>
+    <Street>Edgeham Hollow
+Winchester Way</Street>
+  </Person>
+  <Person>
+    <FirstName>Alan</FirstName>
+    <LastName>Faulkner</LastName>
+    <Street>4726 - 11th Ave. N.E.</Street>
+  </Person>
+  <Person>
+    <FirstName>Norma</FirstName>
+    <LastName>York</LastName>
+    <Street>7 Houndstooth Rd.</Street>
+  </Person>
+  <Person>
+    <FirstName>Claudia</FirstName>
+    <LastName>Aguilar</LastName>
+    <Street>1 Mt. Dell Drive</Street>
+  </Person>
+  <Person>
+    <FirstName>Esther</FirstName>
+    <LastName>Charles</LastName>
+    <Street>1 Smiling Tree Court</Street>
+  </Person>
+  <Person>
+    <FirstName>Alfred</FirstName>
+    <LastName>Petty</LastName>
+    <Street>1008 Lydia Lane</Street>
+  </Person>
+  <Person>
+    <FirstName>Wallace</FirstName>
+    <LastName>Bonilla</LastName>
+    <Street>1025 R St.</Street>
+  </Person>
+  <Person>
+    <FirstName>Marla</FirstName>
+    <LastName>Cuevas</LastName>
+    <Street>1028 Green View Court</Street>
+  </Person>
+  <Person>
+    <FirstName>Carolyn</FirstName>
+    <LastName>Rowland</LastName>
+    <Street>Pappelallee 961 st.</Street>
+  </Person>
+  <Person>
+    <FirstName>Barry</FirstName>
+    <LastName>Wade</LastName>
+    <Street>Midi-Couleurs Ave</Street>
+  </Person>
+  <Person>
+    <FirstName>Terence</FirstName>
+    <LastName>Phelps</LastName>
+    <Street>Lützowplatz 5700 Lane</Street>
+  </Person>
+  <Person>
+    <FirstName>Paula</FirstName>
+    <LastName>Bolton</LastName>
+    <Street>Holzstr 6444 Road</Street>
+  </Person>
+  <Person>
+    <FirstName>Frankie</FirstName>
+    <LastName>Schmidt</LastName>
+    <Street>678 Wyndmorror Ave</Street>
+  </Person>
+  <Person>
+    <FirstName>Lara</FirstName>
+    <LastName>Myers</LastName>
+    <Street>34 Oak street</Street>
+  </Person>
+</Person>

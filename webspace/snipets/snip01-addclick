@@ -1,0 +1,2 @@
+//isc_1M
+document.getElementById("isc_1M").addEventListener("click", function(){ alert("Hello World!"); });

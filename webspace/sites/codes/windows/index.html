@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="canonical" href="https://html5-templates.com/"/>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+       
+   <link
+      rel="stylesheet"
+      href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"
+    />
+
+
+        <title>Windows Template</title>
+        <script>
+            $(function() {
+                $("#menu").menu();
+            });
+        </script>
+        <style>
+            .ui-menu {
+                /* width: 150px; */
+            }
+        </style>
+    </head>
+    <body>
+        <div id="desktop">
+            <div class="window closed" data-title="First">Window content
+
+            <form enctype="multipart/form-data" action="/sites/codes/windows/files/VDfiles" method="post">
+    <input id="image-file" type="file" />
+
+    <input type="submit"/>
+</form>
+		</div>
+            <div class="window closed" data-title="Second">Second Window
+
+            <form id="fileupload" action="https://jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+        <!-- Redirect browsers with JavaScript disabled to the origin page -->
+        <noscript><input
+            type="hidden"
+            name="redirect"
+            value="https://blueimp.github.io/jQuery-File-Upload/"
+        /></noscript>
+        <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+        <div class="row fileupload-buttonbar">
+          <div class="col-lg-7">
+            <!-- The fileinput-button span is used to style the file input field as button -->
+            <span class="btn btn-success fileinput-button">
+              <i class="glyphicon glyphicon-plus"></i>
+              <span>Add files...</span>
+              <input type="file" name="files[]" multiple="">
+            </span>
+            <button type="submit" class="btn btn-primary start">
+              <i class="glyphicon glyphicon-upload"></i>
+              <span>Start upload</span>
+            </button>
+            <button type="reset" class="btn btn-warning cancel">
+              <i class="glyphicon glyphicon-ban-circle"></i>
+              <span>Cancel upload</span>
+            </button>
+            <button type="button" class="btn btn-danger delete">
+              <i class="glyphicon glyphicon-trash"></i>
+              <span>Delete selected</span>
+            </button>
+            <input type="checkbox" class="toggle">
+            <!-- The global file processing state -->
+            <span class="fileupload-process"></span>
+          </div>
+          <!-- The global progress state -->
+          <div class="col-lg-5 fileupload-progress fade">
+            <!-- The global progress bar -->
+            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+            </div>
+            <!-- The extended global progress state -->
+            <div class="progress-extended">&nbsp;</div>
+          </div>
+        </div>
+        <!-- The table listing the files available for upload/download -->
+        <table role="presentation" class="table table-striped">
+          <tbody class="files"></tbody>
+        </table>
+      </form>
+		</div>
+            <div style="" class="window closed" data-title="Files">
+                                    <div style="border:solid;width:80px;padding:10px;border-radius:10px;" onclick="ifr001.history.back();" >
+                            <span class="ui-icon ui-icon-copy"></span>
+                            Back
+                        </div>
+                        <hr>
+                <iframe onload="load99()" name="ifr001" id="ifr001" src="/"></iframe>
+                <div style="height:30%;overflow:auto;" id="div004"></div>
+            </div>
+            <div id="div0033" class="window" data-title="SetUp">
+                <h1>Free Windows Template</h1>
+                <p>Minimize the windows to the taskbar, make them full screen or close them.</p>
+                <p>Drag the title bar to move the windows or resize them from the bottom right corner.</p>
+                <hr/>
+                <p>
+                    <strong>You can download and edit this template freely as long as you leave a visible link to HTML5-Templates.com</strong>
+                </p>
+            </div>
+            <div id="taskbar">
+                <button class="taskbarPanel activeTab" id="btn01">Menu</button>
+                <button class="taskbarPanel " id="btn02">Tool01</button>
+            </div>
+            <div id="icons">
+                <ul id="menu" role="menu" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-menu-icons" aria-activedescendant="ui-id-1">
+                    <li class="ui-menu-item">
+                        <div id="" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                            <span class="ui-icon ui-icon-copy"></span>
+                            <a class="openWindow" data-id="3">Set Up Screen</a>
+                        </div>
+                    </li>
+                  <hr>
+                    <li class="ui-menu-item">
+                        <div id="" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                            <span class="ui-icon ui-icon-script"></span>
+                            <a class="openWindow" data-id="0">Open first</a>
+                        </div>
+                    </li>
+                    <li class="ui-menu-item">
+                        <div id="" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                            <span class="ui-icon ui-icon-circle-zoomout"></span>
+                            <a class="openWindow" data-id="1">Open Second</a>
+                        </div>
+                    </li>
+                    <li class="ui-menu-item">
+                        <div id="" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                            <span class="ui-icon ui-icon-folder-open"></span>
+                            <a class="openWindow" data-id="2"> Files</a>
+                        </div>
+                    </li>
+                    <hr>
+                    <li class="ui-menu-item">
+                        <div id="ui-id-1" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                            <span class="ui-icon ui-icon-disk"></span>
+                            Save
+                        
+                        </div>
+                    </li>
+                    <li class="ui-menu-item">
+                        <div id="ui-id-2" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                            <span class="ui-icon ui-icon-zoomin"></span>
+                            Zoom In
+                        
+                        </div>
+                    </li>
+                    <li class="ui-menu-item">
+                        <div id="ui-id-3" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                            <span class="ui-icon ui-icon-zoomout"></span>
+                            Zoom Out
+                        
+                        </div>
+                    </li>
+                    <li class="ui-state-disabled ui-menu-item" aria-disabled="true">
+                        <div id="ui-id-4" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                            <span class="ui-icon ui-icon-print"></span>
+                            Print...
+                        
+                        </div>
+                    </li>
+                    <hr>
+                    <li class="ui-menu-item">
+                        <div aria-haspopup="true" id="ui-id-5" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                            <span class="ui-menu-icon ui-icon ui-icon-caret-1-e"></span>
+                            Playback
+                        
+                        </div>
+                        <ul role="menu" aria-hidden="true" aria-expanded="false" class="ui-menu ui-widget ui-widget-content ui-front" style="display: none;">
+                            <li class="ui-menu-item">
+                                <div id="ui-id-6" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                                    <span class="ui-icon ui-icon-seek-start"></span>
+                                    Prev
+                                
+                                </div>
+                            </li>
+                            <li class="ui-menu-item">
+                                <div id="ui-id-7" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                                    <span class="ui-icon ui-icon-stop"></span>
+                                    Stop
+                                
+                                </div>
+                            </li>
+                            <li class="ui-menu-item">
+                                <div id="ui-id-8" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                                    <span class="ui-icon ui-icon-play"></span>
+                                    Play
+                                
+                                </div>
+                            </li>
+                            <li class="ui-menu-item">
+                                <div id="ui-id-9" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">
+                                    <span class="ui-icon ui-icon-seek-end"></span>
+                                    Next
+                                
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="ui-menu-item">
+                        <div id="ui-id-10" tabindex="-1" role="menuitem" class="ui-menu-item-wrapper">Learn more about this menu</div>
+                    </li>
+                </ul>
+            </div>
+            <a href="https://html5-templates.com/" rel="nofollow" target="_blank" id="templateLink">&copy;HTML5-Templates.com</a>
+            <!-- You can use this template freely if you leave a visible link to HTML5-Templates.com -->
+        </div>
+        <script></script>
+        <script src="scripts02.js"></script>
+    </body>
+</html>

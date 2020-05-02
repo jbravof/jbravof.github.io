@@ -1,0 +1,6 @@
+//mypicture
+//http://66.108.142.204/webapp001win10/images/count.jpg
+
+var val11=document.getElementById("mypicture");
+alert(val11.src);
+val11.src="http://66.108.142.204/webapp001win10/images/count.jpg"

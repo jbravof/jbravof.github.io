@@ -1,0 +1,170 @@
+<html>
+  <head>
+      <title>Example error blob and indexeddb</title>
+  </head>
+
+  <body>
+    <p>This example demostrate that javascript code inside a Blob can't access indexedDb in Chrome.</p>
+    <p>Click 'Start WebWorker' to create a Worker inside a Blob. This worker tries to insert some<br>
+    data into a database created in 'startWorker()' function.</p>
+    <button type="button" onclick="startWorker()" id="btnStart">
+        Start WebWorker
+    </button>
+    <button type="button" onclick="stopWorker()" id="btnStop">
+        Stop WebWorker
+    </button>
+
+
+  <!-- FOR LOGGING INFO PURPOSES -->
+  <p id="demo"></p>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+  <!-- TRICK !! Declare this block of type 'javascript/worker' or something non-standard.
+      Later we can create on the fly javascript executable code
+      using a Blob (see 'window.onload' function later on this file)
+  -->
+  <script id="worker" type="javascript/worker">
+
+        var started = false;
+        var timer;
+
+        onmessage = function (event)
+        {
+            var orden = event.data.toString();
+
+            switch (orden)
+            {
+                case 'start':
+                    start();
+                    break;
+                case 'stop':
+                    stop();
+                    break;
+                default:
+                    notRecognized(orden);
+                    break;
+            }
+        }
+
+        function start()
+        {
+            if( ! started)
+            {
+              timer = setInterval(function(){ job() }, 3000);
+              started = true;
+            }
+        }
+
+        function stop()
+        {
+            if(started)
+            {
+                clearInterval(timer);
+                started = false;
+            }
+        }
+
+        //Executed each 3 seconds (see start() )
+        function job()
+        {
+          // Open the database -> ERROR!! Uncaught SecurityError: Failed to execute 'open' on 'IDBFactory':
+          //                              access to the Indexed Database API is denied in this context.
+          var open = indexedDB.open("MyDatabase", 1);
+
+          open.onsuccess = function()
+          {
+              // Start a new transaction
+              var db = open.result;
+              var tx = db.transaction("MyObjectStore", "readwrite");
+              var store = tx.objectStore("MyObjectStore");
+              var index = store.index("NameIndex");
+
+              // Add some data
+              store.put({id: 12345, name: {first: "John", last: "Doe"}, age: 42});
+              store.put({id: 67890, name: {first: "Bob", last: "Smith"}, age: 35});
+
+              // Close the db when the transaction is done
+              tx.oncomplete = function()
+              {
+                  db.close();
+              };
+          }
+        }//end job()
+
+        function notRecognized(orden)
+        {
+            var mensaje = 'Comando no reconocido';
+            selt.postMessage(mensaje + ': ' + orden);
+        }
+  </script>
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        var myWorker;
+        var workerStarted = false;
+
+        //Al cargar la pagina, se llama al onload, que carga el WebWorker
+        window.onload = function () {
+
+            var blob = new Blob([ document.querySelector('#worker').textContent ], {type : 'text/javascript'});
+
+            myWorker = new Worker(window.URL.createObjectURL(blob));
+
+            myWorker.onmessage = function (event)
+            {
+                document.getElementById("demo").textContent = event.data; //cambiamos el texto del <p>
+                console.log("Got: " + event.data + "\n");
+            };
+
+            myWorker.onerror = function (error)
+            {
+                document.getElementById("demo").textContent = "Worker error: " + error.message;
+                console.log("Worker error: " + error.message + "\n");
+                throw error;
+            };
+        };//e onload
+
+      //click en botón iniciar, mandamos 'start' al worker
+      function startWorker()
+      {
+         if(workerStarted)
+         {
+            document.getElementById("demo").textContent = "Worker yet started !";
+            return;
+          }
+
+
+          //Create the DataBase
+          var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB || window.shimIndexedDB;
+
+          // Open (or create) the database
+          var open = indexedDB.open("MyDatabase", 1);
+
+          // Create the schema
+          open.onupgradeneeded = function() {
+              var db = open.result;
+              var store = db.createObjectStore("MyObjectStore", {keyPath: "id"});
+              var index = store.createIndex("NameIndex", ["name.last", "name.first"]);
+          };
+
+          workerStarted = true;
+
+          //Start Worker
+          myWorker.postMessage('start');
+      }
+
+      //click en botón parar, mandamos 'stop' al worker
+      function stopWorker() {
+          myWorker.postMessage('stop');
+      }
+    </script>
+  </body>
+
+  </html>

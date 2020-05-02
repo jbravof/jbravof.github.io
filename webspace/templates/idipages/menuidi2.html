@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrapupdated Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  
+
+<script src="http://10.10.1.24:8017/content.aspx?b=ECMS&id=44"></script>
+
+<style>
+.total001{
+	border:solid 2px black;
+    border-radius:10px;
+	margin:0px;
+	padding:0.5vh;
+
+	
+
+}
+.row001{
+ border: solid 0px black;
+    border-radius: 10px;
+    margin: 0px;
+    max-height: 88vh;
+    margin-top: 0.5vh;
+    padding: 0px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.row002{
+    border: solid 0px black;
+    border-radius: 10px;
+    margin: 5px;
+    height: AUTO;
+    padding: 8px;
+    flex: 1 0 50%;
+    max-height: 100%;
+}
+
+.col001{
+border: solid 0px black;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #f8f9fa;
+}
+
+#nav01{
+	height:13.5vh;
+}
+#body01{
+background-color: blue;
+}
+
+#body02 {
+    background-color: #27ff00;
+}
+#body03 {
+   background-color: #ff7600;
+}
+#body04 {
+  background-color: #9100ff;
+}
+#collapsibleNavbar{
+	max-width:50%;
+}
+.btn-warning{
+    border:solid 1px black;
+    border-radius:10px;
+	margin:3px;
+
+}
+.boton01{
+border: solid 1px black;
+    border-radius: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin: 5px;
+    width: -webkit-fill-available;
+    /* height: -webkit-fill-available
+}
+
+</style>
+</head>
+<body>
+<div  class="container-fluid total001">
+<nav id="nav01" style="border-radius:10px;" class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" onclick="javascript:location.reload();" href="" target="_self">IDIweb</a>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+<!--     <ul class="navbar-nav">
+      <li class="nav-item">
+          <button onclick="dos();">hide</button>
+      </li>
+      <li class="nav-item">
+         <button onclick="dosdos();">show</button>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>    
+    </ul> -->
+	   <button class="btn-sm btn-warning" data-toggle="collapse" data-target="#body01" onclick="dosdos6();">Links</button>
+	   <button class="btn-sm btn-warning" data-toggle="collapse" data-target="#body02" onclick="">Viewer</button>
+       <button class="btn-sm btn-warning" data-toggle="collapse" data-target="#body03" onclick="">Tools</button>
+       <button class="btn-sm btn-warning" data-toggle="collapse" data-target="#body04" onclick="">Tools</button>
+<!-- 	   <button class="btn-sm btn-warning" data-toggle="collapse" data-target="#central01" onclick="">Viewer</button>
+       <button class="btn-sm btn-warning" data-toggle="collapse" data-target="#central02" onclick="">Tools</button>  	 -->						   
+  </div>  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+</nav>
+<div id="body00" class="row001">
+<div id="body01" class="row row002 collapse">
+	<div class="col-sm-4 col001">
+	hola
+	</div>
+	<div class="col-sm-4 col001">
+hola
+	</div>
+	<div class="col-sm-3 col001">
+hola
+	</div>	
+</div>
+<div id="body02" class="row row002 collapse">
+	<div style="max-width: 30%;" class="col col001">
+       <button class="boton01"  onclick="">Tools</button>
+	        <button class="boton01"  onclick="">Tools</button>
+	</div>
+	<div class="col col001">
+<iframe></iframe>
+	</div>
+</div>
+<div id="body03" class="row row002 collapse">
+	<div class="col col001">
+	hola
+	</div>
+	<div class="col col001">
+
+	</div>
+</div>
+<div id="body04" class="row row002 collapse">
+	<div class="col col001">
+	hola
+	</div>
+	<div class="col col001">
+
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>

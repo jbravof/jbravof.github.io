@@ -1,0 +1,107 @@
+
+<script>
+    function dos3(){
+  //alert(document.getElementById("ifr001").contentDocument.getElementsByTagName("*").length);
+  var cuadro01=document.getElementById("ifr001").contentDocument;
+var lista002=cuadro01.body.getElementsByTagName("*").length;
+//alert(lista002);
+var elem003=cuadro01.getElementsByTagName("*")[6];
+var val004=elem003.innerHTML;
+//alert(val004);
+//alert(elem003.getElementsByTagName("A").length);
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";var text2 = "";
+var i;
+text2 += "   <style>.fakeimg {margin:25px;height: auto; background: #aaa;padding: 5px;border:solid 1px blue;border-radius:10px;}</style>"
+for (i = 1; i < elem003.getElementsByTagName("A").length; i++) { 
+  text += elem003.getElementsByTagName("A")[i].innerHTML ;
+  text2 += "  <p class='fakeimg'><a class='nav-link btn btn-primary' href='" + elem003.getElementsByTagName("A")[i].href  + "'>" + elem003.getElementsByTagName("A")[i].innerHTML +"</a></p>";
+}
+
+//alert(text2);
+ document.getElementById("ifr002").contentDocument.body.innerHTML= ("<base href='http://localhost/webspace/' target='browser03'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>" + text2) ;
+ // document.getElementById("div003").style="display:block";
+  }
+    function tres(){
+      window.domain="file:///G:/My%20Drive/WebSites/webspace"
+       alert(window.domain)
+
+
+  //alert(document.getElementById("ifr001").contentDocument.getElementsByTagName("*").length);
+  var cuadro01=document.getElementById("ifr001").contentWindow;
+
+ // cuadro01.domain="file:///G:/My%20Drive/WebSites/webspace"
+     //  alert(cuadro01.domain)
+
+var lista002=cuadro01.document.getElementsByTagName("*").length;
+var elem003=cuadro01.getElementsByTagName("*")[0];
+var val004=elem003.innerHTML;
+//alert(val004);
+  }
+
+  function load003() {
+ //   alert("si");
+
+    var browser01 = document.getElementById("ifr001");
+
+    var content01 = browser01.contentWindow.document;
+
+    var suma01 = content01.getElementsByTagName("A").length;
+  //alert(suma01);
+  if(suma01==0){  }else{dos3();}
+
+}
+</script>
+<body style="margin:0px;overflow:hidden">
+<div id="output2"></div>
+<script>
+var path = window.location.pathname.split('/');
+//alert(path.slice(0,path.lastIndexOf('/')+1));
+//alert(path);
+//path.pop();
+//path.join('/');
+
+
+
+
+// Converts your input data into an object:
+var convert = function(input) {
+  var output = {};
+  // iterate through each path in the input array:
+  input.forEach(function(path) {
+    var folders = path.split("\\"); // convert this path into an array of folder names
+    // "parent" serves as a marker in the output object pointing to the current folder
+    var parent = output; // the topmost folder will be a child of the output root
+    folders.forEach(function(f) {
+      parent[f] = parent[f] || {}; // add a folder object if there isn't one already
+      parent = parent[f]; // the next part of the path will be a child of this part
+    });
+  });
+  return (output);
+}
+
+// Draws nested lists for the folder structure
+var drawFolders = function(input) {
+  var output = "<ul>";
+  Object.keys(input).forEach(function(k) { 
+    output += "<li>" + k; // draw this folder
+    if (Object.keys(input[k]).length) {
+      output += drawFolders(input[k]); // recurse for child folders
+    }
+    output += "</li>";
+  });
+  output += "</ul>";
+  return output;
+}
+
+var input = [
+  "A\\A1\\A2\\A3",
+  "A\\B\\B1\\B2",
+  "A\\B\\B4\\B5\\B5",
+  "A\\C\\C1\\C2"
+];
+//document.getElementById("output").innerHTML = drawFolders(convert(input));
+</script>
+<iframe src="" id="ifr001" name="ifr0011" onLoad="load003()" style="z-index:-10;width:20px;height:20px;position:absolute;top:0px;left:0px;display:none" ></iframe>
+<iframe src="" id="ifr002" name="ifr002" style="width:100%;height:100vh;margin:0px;overflow-x:hidden;border:solid 0px black" ></iframe>
+</body>

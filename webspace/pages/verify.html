@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>verify</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="/webspace/js/jsc02.js"></script>
+         <script src="/webspace/js/jsc01.js"></script>
+       <base href="/webspace/" target="ifr001">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+        nav{position:fixed;}
+		
+        .fakeimg {height: 200px; background: #aaa; padding: 5px;}
+
+            iframe {
+                width: 100%;
+				border:solid 1px black;
+                border-radius: 15px;
+                height: 35vh;
+                 padding-left: 10px;
+               padding-right:10px;
+			    padding-top: 10px;
+            }
+			#ifr001{
+			height: 30vh;
+			
+			border:solid 5px red;
+			}
+            a{
+                margin:5px;
+            }
+            .col-sm-4{
+
+                border:solid 0px blue;
+                overflow:scroll;
+            }
+            .col-sm-8{
+                overflow:hidden;
+            }
+        </style>
+        <script>
+
+           // uno();
+        </script>
+    </head>
+    <body>
+    
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="pages" target="_top">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary"  href="http://localhost/webspace%20-%20Copy/files">files</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="http://localhost/webspace%20-%20Copy/cmd">cmd</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="http://localhost/webspace%20-%20Copy/pages">pages</a>
+                  
+  </li>
+ <li class="nav-item">
+                      <button class="btn btn-primary" type="button" onclick="uno()">
+               uno
+            </button>
+              </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div   class="container-fluid" style="margin-top:5px;margin-bottom:5px">
+        <div id="divspan">
+   <div class="input-group">
+       
+      <span id="span01" onclick="this.style.border='solid 1px red';span01('span01'); " class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+    
+	
+	  <input id="email" type="text" class="form-control" name="email" placeholder="Webpage" onchange="alert(33);document.getElementById('ifr001').src=this.value">
+     <span onclick="span02()" class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+	      <span onclick="span03()" class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+	 
+     </div>
+  	<br>
+       </div>
+       <div id="div004" style="display: none;">
+	    <iframe style="" sandboxing="allow-same-origin" name="ifr001"  id="ifr001" onLoad="load003()" src=""></iframe>
+         
+	   </div>
+   
+
+        
+        </div>
+     
+        <div class="container-fluid" style="margin-top:5px;margin-bottom:5px">
+
+         <iframe sandboxing="allow-same-origin" name="ifr002"   id="ifr002" ></iframe>
+       
+
+	   </div>
+
+
+     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="javascript:void(0)">Footer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar2">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary"  href="../files">files</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="../cmd">cmd</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="../pages">pages</a>
+                  
+					</li>
+					<li class="nav-item">
+                      <button class="btn btn-primary" type="button" onclick="uno()">
+						uno
+						</button>
+					</li>
+                </ul>
+            </div>
+        </nav>
+       
+     		        <script>
+search01();
+  function tres2(){
+  //    window.domain="file:///G:/My%20Drive/WebSites/webspace"
+     alert(window.domain)
+
+
+  //alert(document.getElementById("ifr001").contentDocument.getElementsByTagName("*").length);
+  var cuadro01=document.getElementById("ifr001").contentWindow;
+
+ // cuadro01.domain="file:///G:/My%20Drive/WebSites/webspace"
+     //  alert(cuadro01.domain)
+
+var lista002=cuadro01.document.getElementsByTagName("A").length;
+var elem003=cuadro01.getElementsByTagName("A")[0];
+var val004=elem003.innerHTML;
+alert(val004);
+  }
+        </script>
+    </body>
+</html>

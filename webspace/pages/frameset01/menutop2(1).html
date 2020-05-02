@@ -1,0 +1,62 @@
+
+<script>
+    function dos3(){
+  //alert(document.getElementById("ifr001").contentDocument.getElementsByTagName("*").length);
+  var cuadro01=document.getElementById("ifr001").contentDocument;
+var lista002=cuadro01.body.getElementsByTagName("*").length;
+//alert(lista002);
+var elem003=cuadro01.getElementsByTagName("*")[6];
+var val004=elem003.innerHTML;
+//alert(val004);
+//alert(elem003.getElementsByTagName("A").length);
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";var text2 = "";
+var i;//alert(document.body.getAttribute("style"));alert(elem003.getElementsByTagName("A").length);alert(top.document.getElementsByTagName("FRAME")[0].style.width)//.length)
+text2 += "   <style>.fakeimg { word-wrap: break-word;font-size:100%; vertical-align: middle;  text-align: center;  float:left;margin:10px;width: " + (73 / (elem003.getElementsByTagName("A").length ) ) +"%; height: auto; background: #aaa;padding: 5px;border:solid 1px blue;border-radius:10px;}</style>"
+for (i = 1; i < elem003.getElementsByTagName("A").length; i++) { 
+  text += elem003.getElementsByTagName("A")[i].innerHTML ;
+  text2 += "<div style='width:auto;font-size:60%; vertical-align: middle;  text-align: center; word-wrap: break-word;'>  <a class='fakeimg nav-link btn btn-primary  ' href='" + elem003.getElementsByTagName("A")[i].innerHTML  + "'><svg height='25px' width='100%'> <text x='0' y='15' fill='red'>" + elem003.getElementsByTagName("A")[i].innerHTML +"</text></svg></a></div>";
+//<p class='fakeimg'></p>
+
+
+}
+
+//alert(text2);
+ document.getElementById("ifr002").contentDocument.body.innerHTML= ("<base href='/webspace/' target='ifr0011'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>" + text2 ) ;
+ // document.getElementById("div003").style="display:block";
+  }
+    function tres(){
+      window.domain="file:///G:/My%20Drive/WebSites/webspace"
+       alert(window.domain)
+
+
+  //alert(document.getElementById("ifr001").contentDocument.getElementsByTagName("*").length);
+  var cuadro01=document.getElementById("ifr001").contentWindow;
+
+ // cuadro01.domain="file:///G:/My%20Drive/WebSites/webspace"
+     //  alert(cuadro01.domain)
+
+var lista002=cuadro01.document.getElementsByTagName("*").length;
+var elem003=cuadro01.getElementsByTagName("*")[0];
+var val004=elem003.innerHTML;
+//alert(val004);
+  }
+
+  function load003() {
+ //   alert("si");
+
+    var browser01 = document.getElementById("ifr001");
+
+    var content01 = browser01.contentWindow.document;
+
+    var suma01 = content01.getElementsByTagName("A").length;
+  //alert(suma01);
+  if(suma01==0){  }else{dos3();}
+
+}
+</script>
+<body style="margin:0px;overflow:hidden">
+
+<iframe src="/menulist" id="ifr001" name="ifr001" onLoad="load003()" style="z-index:-10;width:20px;height:20px;position:absolute;top:0px;left:0px;border-style:none;display:none" ></iframe>
+<iframe src="" id="ifr002" name="ifr002" style="width:100%;height:100vh;margin:0px;overflow-x:hidden;border-style:none" ></iframe>
+</body>

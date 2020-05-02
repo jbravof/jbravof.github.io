@@ -1,0 +1,25 @@
+<!doctype html>
+<title>CSS Grid Template 10</title>
+  <link rel="stylesheet" href="styles/style01.css">
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="scripts/script01.js"></script>
+<style>
+
+</style>
+<body>
+  <header id="pageHeader">Header</header>
+  <article id="mainArticle"><iframe name="ifr10"></iframe></article>
+  <nav id="mainNav">Nav</nav>
+  <div id="siteAds"></div>
+  <footer id="pageFooter">Footer</footer>
+  <script>
+$( "#pageHeader" ).load( "topcontent/panel01.html", function() {
+  console.log( "Loaded." );
+// $("#siteAds").append("<br>Load was performed.<br>");
+  $("#siteAds").append("<div style='border:solid 2px black;border-radius:5px;overflow:auto'>Loaded.</div>");
+
+});
+ 
+  </script>
+</body>

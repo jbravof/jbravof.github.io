@@ -1,0 +1,9 @@
+C:\Users\jbravof\Documents\Visual Studio 2013\Samples\VB.NET Working with 2\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\jbravof\Documents\Visual Studio 2013\Samples\VB.NET Working with 2\WebApplication1\bin\WebApplication1.dll
+C:\Users\jbravof\Documents\Visual Studio 2013\Samples\VB.NET Working with 2\WebApplication1\bin\WebApplication1.pdb
+C:\Users\jbravof\Documents\Visual Studio 2013\Samples\VB.NET Working with 2\WebApplication1\bin\WebApplication1.xml
+C:\Users\jbravof\Documents\Visual Studio 2013\Samples\VB.NET Working with 2\WebApplication1\obj\Debug\WebApplication1.Resources.resources
+C:\Users\jbravof\Documents\Visual Studio 2013\Samples\VB.NET Working with 2\WebApplication1\obj\Debug\WebApplication1.vbproj.GenerateResource.Cache
+C:\Users\jbravof\Documents\Visual Studio 2013\Samples\VB.NET Working with 2\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\jbravof\Documents\Visual Studio 2013\Samples\VB.NET Working with 2\WebApplication1\obj\Debug\WebApplication1.xml
+C:\Users\jbravof\Documents\Visual Studio 2013\Samples\VB.NET Working with 2\WebApplication1\obj\Debug\WebApplication1.pdb

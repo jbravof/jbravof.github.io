@@ -1,0 +1,41 @@
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+//  document.getElementById("demo").innerHTML = txt;
+}
+// myFunction();
+
+ function myFunction2() {
+    var text;
+    var concat01;
+
+    concat01+="Select Option\n";
+concat01+="1-Option 1\n";
+concat01+="2-Option 2\n";
+concat01+="3-Option 3\n";
+concat01+="4-Option 4\n";
+
+    var favDrink = prompt(concat01, "Daiquiri");
+    switch(favDrink) {
+        case "1":
+        text = "Excellent choice. Martini is good for your soul.";
+        break;
+    case "2":
+        text = "Daiquiri is my favorite too!";
+        break;
+        case "Cosmopolitan":
+        text = "Really? Are you sure the Cosmopolitan is your favorite?";
+        break;
+        default:
+        text = "I have never heard of that one..";
+    }
+  //  document.getElementById("demo").innerHTML = text;
+  //alert(text);
+
+}
+myFunction2();

@@ -1,0 +1,8 @@
+var tool01_01 = document.getElementById("ifr01").contentWindow;
+var tool01_02 = document.getElementById("tool01div01");
+
+//tool01_02.innerHTML=tool01_01.document.body.innerHTML
+
+var quest01 = prompt("TAG Name", "DIV");
+
+alert(tool01_01.document.getElementsByTagName(quest01).length);

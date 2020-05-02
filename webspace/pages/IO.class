@@ -1,0 +1,91 @@
+Sample IO.java:
+ 
+import java.applet.*;
+import java.awt.*;
+import java.io.*;
+ 
+import java.util.regex.*;
+import java.util.Map;
+import java.util.ArrayList;
+ 
+@SuppressWarnings("deprecation")
+public class IO extends Applet {
+    private ArrayList<String[]> envvars = new ArrayList<String[]>();    
+    public static String newLine = System.getProperty("line.separator");    
+ 
+    public boolean boolSwitch = true;
+ 
+    public void init() {
+        Map<String, String> env = System.getenv();
+        for (String envName : env.keySet()) {
+            String[] tmpfield;
+            tmpfield = new String[2];
+            tmpfield[0] = envName;
+            tmpfield[1] = env.get(envName);
+            envvars.add(tmpfield);
+        }    
+    }    
+ 
+    public void write(String path, String data) {
+        try {
+            path = expEnvironment(path);
+            File file = new File(path);
+            DataOutputStream dos = new DataOutputStream(
+                new BufferedOutputStream(
+                    new FileOutputStream(file)));
+            dos.writeBytes(data);
+            dos.close();                    
+        }
+        catch (SecurityException se) {
+            System.err.println(se.getMessage());
+        }
+        catch (IOException ioe) {
+            System.err.println(ioe.getMessage());
+        }
+    }
+ 
+    public String load(String path) {
+        String tmpStr = new String();
+        try {
+            path = expEnvironment(path);
+            File file = new File(path);
+            DataInputStream dis = new DataInputStream(
+                new BufferedInputStream(
+                    new FileInputStream(file)));
+            do {
+                tmpStr = tmpStr.concat(dis.readLine());
+                if (dis.available() != 0) {
+                    tmpStr = tmpStr.concat(newLine);
+                }
+            } while (dis.available() != 0);
+            dis.close();                    
+        }
+        catch (SecurityException se) {
+            System.err.println(se.getMessage());
+        }
+        catch (IOException ioe) {
+            System.err.println(ioe.getMessage());
+        }
+        return tmpStr;
+    }
+ 
+    public void paint(Graphics g) {
+    }
+ 
+    private String expEnvironment(String path) {
+        String envPer = new String();
+        String env = new String();
+        Pattern pattern = Pattern.compile("%\\w+%");
+        Matcher matcher = pattern.matcher(path);
+        while (matcher.find()) {
+            envPer = matcher.group();
+            env = envPer.replace("%", "");
+            for (int i = 0; i < envvars.size(); i++) {
+                if (env.equalsIgnoreCase(envvars.get(i)[0])) {
+                    path = path.replace(envPer, envvars.get(i)[1]);
+                }
+            }
+        }
+        return path;
+    }    
+}

@@ -1,0 +1,50 @@
+body{border: solid 1px black;margin:0px;}
+
+  .fakeimg {
+      height: 200px;
+      background: #aaa;
+	  padding:5px;
+  }
+  
+  iframe{
+  width:100%;border-radius:15px;height:100%;margin:0px;
+  
+  }
+
+  .cl21{
+
+	border: solid 1px black;
+
+  }
+
+  .clround01{
+
+  	border-radius:15px;
+  }
+
+  .clinter{
+
+	padding:10px;
+
+  }
+
+  .standwh{
+margin:1vh;
+	max-height:95vh;
+	overflow-y:scroll;
+	
+
+  }
+
+  .boton01{
+
+width:36px;
+
+height:36px;
+
+z-index:11;
+
+background-color:red;
+
+}
+    .boton02{position:relative;left:4px;top:4px;width:26px;height:26px;z-index:-12;background-color:#0e0e0e;}

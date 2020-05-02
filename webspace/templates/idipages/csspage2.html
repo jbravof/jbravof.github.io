@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<body>
+  <style>
+  iframe{
+    margin: 0px;
+    width: 100%;
+    height: 85vh;
+  }
+  </style>
+
+
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="max-height:100vh;overflow-y:audio;overflow-x:hidden;display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+
+<!--    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    <h2>Filter Table</h2> 
+  
+
+  <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for menu.." id="myInput2" onkeyup="myFunction()">
+    <table class="w3-table-all w3-margin-top" id="myTable2">
+    <tr>
+     
+      <th style="width:100%;">Country</th>
+    </tr>
+    <tr>
+      <td><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/TestApps/New%20Folder/New%20Item" target="ifr02">New item</a></td>
+    </tr>
+	    <tr>
+      <td><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/Accruals%20/Accruals%20Panel" target="ifr02">Accruals Panel</a></td>
+    </tr>
+	    <tr>
+      <td><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/COA_APP/COA/ChartOfAccounts" target="ifr02">COA</a></td>
+    </tr>
+    <tr>
+      <td>Sweden</td>
+    </tr>
+ 
+  </table> -->
+  <div class="w3-container-fluid">
+  <div style=" height: 1vh;overflow: scroll;visibility: hidden;">
+  <iframe src="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/TestApps/New%20Folder/listlinks01" id="ifr03" onload="load06()"></iframe></div>
+      <p style="text-align:center">  IDItools</p><input class="w3-input w3-border w3-padding" type="text" placeholder="Search for IDI.." id="myInput3" onkeyup="myFunction2()">
+  
+  
+<ul class="w3-ul " style="max-height:75vh;overflow-y:auto;overflow-x:hidden" id="myUL">
+
+<!--     <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/TestApps/New%20Folder/New%20Item" target="ifr02">New item</a></li> -->
+<!--     <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/Accruals%20/Accruals%20Panel" target="ifr02">Accruals Panel</a></li>
+    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/COA_APP/COA/ChartOfAccounts" target="ifr02">COA</a></li>
+	    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/TestApps/New%20Folder/New%20Item" target="ifr02">New item</a></li>
+    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/Accruals%20/Accruals%20Panel" target="ifr02">Accruals Panel</a></li>
+    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/COA_APP/COA/ChartOfAccounts" target="ifr02">COA</a></li>
+	    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/TestApps/New%20Folder/New%20Item" target="ifr02">New item</a></li>
+    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/Accruals%20/Accruals%20Panel" target="ifr02">Accruals Panel</a></li>
+    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/COA_APP/COA/ChartOfAccounts" target="ifr02">COA</a></li>
+	    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/TestApps/New%20Folder/New%20Item" target="ifr02">New item</a></li>
+    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/Accruals%20/Accruals%20Panel" target="ifr02">Accruals Panel</a></li>
+    <li><a href="http://10.10.1.24:8017/menu/ECMS/IDIapps/DEVELOPMENT_APPS/APPS/COA_APP/COA/ChartOfAccounts" target="ifr02">COA</a></li> -->
+  
+  </ul>
+
+</div>
+</div>
+
+<div id="main">
+
+<!-- <div class="w3-teal">
+  <button  id="openNav2" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div style="float:right;" class="w3-container">
+    <h3 style="float:right;">My Page</h3>
+  </div>
+</div> -->
+<div class="w3-top">
+<div class="w3-bar w3-light-grey w3-border w3-small">
+  <button  id="openNav" class="w3-button w3-bar-item w3-small" onclick="w3_open()">&#9776;</button>
+  <button class="w3-bar-item w3-button" data-toggle="collapse" data-target="#body01" onclick="">Links</button>
+  <a href="#" class="w3-bar-item w3-button w3-green" data-toggle="collapse" data-target="#body02"><i class="fa fa-home"></i></a>
+  <a href="#" onclick="myFunction3('TR','16','25');" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
+  
+</div>
+</div>
+<BR><br>
+<!-- <div class="w3-container">
+
+<p>In this example, the sidebar is hidden (style="display:none")</p>
+<p>It is shown when you click on the menu icon in the top left corner.</p>
+<p>When it is opened, it shifts the page content to the right.</p>
+<p>We use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value "25%" matches the width of the sidebar.</p>
+</div> -->
+
+<div id="body02" class="w3-container collapse show">
+
+  <iframe id="ifr02" name="ifr02" src=""></iframe>
+</div>
+
+
+
+<div id="body01" class="w3-container collapse">
+  <h2>Filter Table</h2>
+  <p>Search for a name in the input field.</p>
+
+  <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="myInput" onkeyup="myFunction()">
+
+  <table class="w3-table-all w3-margin-top" id="myTable">
+    <tr>
+      <th style="width:60%;">Name</th>
+      <th style="width:40%;">Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Berglunds snabbkop</td>
+      <td>Sweden</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Koniglich Essen</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>Canada</td>
+    </tr>
+    <tr>
+      <td>Magazzini Alimentari Riuniti</td>
+      <td>Italy</td>
+    </tr>
+    <tr>
+      <td>North/South</td>
+      <td>UK</td>
+    </tr>
+    <tr>
+      <td>Paris specialites</td>
+      <td>France</td>
+    </tr>
+  </table>
+
+  <p><strong>Tip:</strong> Remove toUpperCase() if you want to perform a case-sensitive search.</p>
+  <p>Change tr[i].getElementsByTagName('td')[0] to [1] if you want to search for "Country" (index 1) instead of "Name" (index 0).</p>
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable2");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+function myFunction2() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput3");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    txtValue = li[i].textContent || li[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+function myFunction3(valtag,valuno,valdos) {
+//tool01div0133
+var tool01_01 = document.getElementById("ifr03").contentWindow;
+  var tool01_02 = document.getElementById("myUL");
+var quest01=valtag;//prompt("TAG Name",valtag);
+var quest02=valuno;//prompt("start",valuno);
+var quest03=valdos;//prompt("end",valdos);
+//alert(tool01_01.document.getElementsByTagName(quest01).length);
+
+var i;
+for (i = quest02; i < tool01_01.document.getElementsByTagName(quest01).length-quest03; i++) {
+ // text += cars[i] + "<br>";
+
+/*   document.getElementById("tool01div013").innerHTML +="<div class='cl09'>  TagName: "+tool01_01.document.getElementsByTagName(quest01)[i].tagName + "<br>  id: "+tool01_01.document.getElementsByTagName(quest01)[i].id + "<br><div class='cl08'>" + tool01_01.document.getElementsByTagName(quest01)[i].innerHTML + "<br></div></div><br>"; */
+
+ //document.getElementById("myUL").innerHTML +="<li><div class='cl08'>" + tool01_01.document.getElementsByTagName(quest01)[i].innerHTML + "</div></li><br>";
+  
+   document.getElementById("myUL").innerHTML +="<li><a style='width:100%;' class='btn btn-info' target='ifr02' href='" + tool01_01.document.getElementsByTagName(quest01)[i].getElementsByTagName("TD")[2].getElementsByTagName("DIV")[0].getElementsByTagName("a")[0].href + "'>"+ tool01_01.document.getElementsByTagName(quest01)[i].getElementsByTagName("TD")[1].getElementsByTagName("DIV")[0].innerHTML +"</a></li>";
+   
+  // alert("<li><a href='" + tool01_01.document.getElementsByTagName(quest01)[i].getElementsByTagName("TD")[1].innerHTML + "'>jj</a></li><br>")
+}
+}
+
+function load06(){
+setTimeout(function(){
+
+myFunction3("TR","16","24");
+}, 2500); 
+//alert("loaded");
+//sleep(3000);
+
+}
+</script>
+<script>
+ w3_open()
+</script>
+</body>
+</html>

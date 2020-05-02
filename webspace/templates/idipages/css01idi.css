@@ -1,0 +1,141 @@
+iframe{
+
+display:block;
+border:solid 0px blue;
+overflow-x:hidden;
+width:100%;
+height:100%;
+
+}
+
+p{
+    border:solid 0px blue;
+    border-radius:10px;
+    /* padding:10px */
+    width:100%;
+}
+
+.cl10{
+    margin:10px;
+    margin-left:1px;
+width:100%;
+border:solid 1px blue;
+   border-radius:10px;
+}
+
+.cl100{
+    margin:10px;
+   
+width:100%;
+border:solid 1px #ff8400;
+   border-radius:10px;
+}
+
+#cont01{
+height:15vh;
+overflow-y:auto;
+width:100%;
+border:solid 1px black;
+  border-radius:10px;
+  margin:5px;
+}
+#row01{
+height:70vh;
+}
+h1,p{
+    text-align:center
+}
+.cl05{
+
+border:solid 0px black;
+
+/* margin: 1px; */
+
+padding: 0px;
+
+}
+.cl06{
+
+    border:solid 1px #dc3545;
+     border-radius:10px;
+}
+.cl07{
+
+    border:solid 0px #28a745;
+    height:25vh;
+overflow-y:scroll;
+overflow-x:hidden;
+margin-top:5px;
+ border-radius:10px;
+}
+.cl08{
+  border:solid 1px red;
+   border-radius:10px;  
+   padding:5px;
+   margin:5px;
+  
+}
+.cl09{
+  border:solid 1px #343a40;
+   border-radius:10px;  
+   padding:5px;
+   margin:5px;
+   overflow-x:hide;
+   overflow-y:scroll;
+   width:100%;
+   height:150px;
+}
+
+.col-sm-6 {
+    -ms-flex: 0 0 25%;
+    flex: 1 0 25%;
+    max-width: 99%;
+    border:solid 10px #dc3545;
+           margin-right:10px;
+       border-radius:10px;  
+       max-width:90%
+}
+.col-sm-4 {
+  border:solid 0px #343a40;
+   border-radius:10px;  
+}
+#central02{
+    margin-top: 7px;
+   
+
+}
+#central01{
+    margin: 7px;
+    margin-bottom:0px;
+     border:solid 1px #343a40;
+   border-radius:10px;  
+
+}
+.col-sm-2{
+      margin-top: 7px;
+       margin-left:5px;
+       padding-top:3px;
+       max-width:90%;
+        border-radius:10px;  
+}
+button{
+ border-radius:10px;  
+
+}
+.card-link{
+      border:solid 2px #343a40;
+      border-radius:10px;
+      width: 100%;
+       margin: 5px; 
+}
+h2{
+
+  text-align:center;
+}
+
+#ch01 {
+     padding: .1rem .50rem; 
+    
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}

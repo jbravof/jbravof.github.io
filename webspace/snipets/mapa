@@ -1,0 +1,229 @@
+menu001();
+
+function mapa001(){
+
+//var val001=top.document.getElementsByTagName("*").length;
+//var fintext;
+var mapawin= window.open("Mapa", "Mapa", "width=200,height=640");
+mapawin.document.open();
+ //var css001="<style> body{padding:10px;overflow:scroll} ul{display:none; width:6%;float:left; border:solid 2px red;height:140px;overflow:scroll;padding:10px;border-radius:15px;}  header,footer{display:none; width:90%;float:right; border:solid 2px blue;height:100px;overflow:scroll;padding:10px;border-radius:15px;} div{border:solid 2px black;height:150px;overflow:scroll;padding:10px;border-radius:15px;}img{width:80px;height:80px;margin:5px;border-radius:15px;}</style><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>";
+ var css001="<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>";
+
+var css002 =""
+ css002 +="<style>"
+ css002 +=" body{padding:10px;overflow:scroll} "
+ css002 +=" ul{display:none; width:6%;float:left; border:solid 2px red;height:140px;overflow:scroll;padding:10px;border-radius:15px;} "
+ css002 +=" header,footer{display:none; width:90%;float:right; border:solid 2px blue;height:100px;overflow:scroll;padding:10px;border-radius:15px;} "
+ css002 +=" div{border:solid 2px black;height:150px;overflow:scroll;padding:10px;border-radius:15px;}.cl005{border:solid 1px black;height:auto;padding:10px;border-radius:15px;overflow:hidden} "
+ css002 +=" img{width:80px;height:80px;margin:5px;border-radius:15px;} "
+ css002 +="</style>"
+
+ mapawin.document.write( css001);
+ mapawin.document.write( css002 );
+mapawin.document.write( "<div style='height:100%'>");
+         for (i = 0; i < val001; i++){
+             fintext="";
+           var art005= "TAG :" + top.document.getElementsByTagName("*")[i].tagName; 
+          var art006="CHILDREN :" + top.document.getElementsByTagName("*")[i].children.length;
+          var par01="PARENT NODE :" +  top.document.getElementsByTagName("*")[i].parentNode.tagName;
+          // alert(art005)
+
+          var art004="  --  ";
+
+          fintext+="<button>" + art005 + "</button>";
+          fintext+="<button>" + art004 + "</button>";
+          fintext+="<button>" + par01 + "</button>";
+          fintext+="<button>" + art004 + "</button>";
+          fintext+="<button>" + art006 + "</button>";
+
+        mapawin.document.write("<div class='cl005'>" +  fintext  + "</div>");
+        mapawin.document.write("<br>");
+         };
+
+ mapawin.document.write("</div><br>");
+ mapawin.document.close();
+
+}
+ function menu001() {
+    var text;
+    var concat01="";
+
+    concat01+="Select Option\n";
+concat01+="1-mapa002\n";
+concat01+="2-mapahead\n";
+concat01+="3-mapa001\n";
+concat01+="manager001()\n";
+
+    var favDrink = prompt(concat01, "1");
+    switch(favDrink) {
+        case "1":
+        mapa002();
+        break;
+    case "2":
+       mapahead();
+        break;
+        case "3":
+        mapa001();
+        break;
+                case "4":
+        manager001();
+        break;
+        default:
+        text = "I have never heard of that one..";
+    }
+  //  document.getElementById("demo").innerHTML = text;
+  //alert(text);
+
+}
+
+function mapa002(){
+
+//var val001=top.document.getElementsByTagName("*").length;
+//var fintext;
+var mapawin= window.open("", "Mapa", "width=200,height=640");
+mapawin.document.open();
+ //var css001="<style> body{padding:10px;overflow:scroll} ul{display:none; width:6%;float:left; border:solid 2px red;height:140px;overflow:scroll;padding:10px;border-radius:15px;}  header,footer{display:none; width:90%;float:right; border:solid 2px blue;height:100px;overflow:scroll;padding:10px;border-radius:15px;} div{border:solid 2px black;height:150px;overflow:scroll;padding:10px;border-radius:15px;}img{width:80px;height:80px;margin:5px;border-radius:15px;}</style><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>";
+ var css001="<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>";
+
+var css002 =""
+ css002 +="<style>"
+ css002 +=" body{padding:10px;overflow:scroll} "
+ css002 +=" ul{display:none; width:6%;float:left; border:solid 2px red;height:140px;overflow:scroll;padding:10px;border-radius:15px;} "
+ css002 +=" header,footer{display:none; width:90%;float:right; border:solid 2px blue;height:100px;overflow:scroll;padding:10px;border-radius:15px;} "
+ css002 +=" div{border:solid 2px black;height:150px;overflow:scroll;padding:10px;border-radius:15px;}.cl006{margin:10px}.cl005{margin:5px;border:solid 1px black;height:auto;padding:10px;border-radius:15px;overflow:hidden;width:100%} "
+ css002 +=" img{width:80px;height:80px;margin:5px;border-radius:15px;} "
+ css002 +="</style>"
+
+ mapawin.document.write( css001);
+ mapawin.document.write( css002 );
+mapawin.document.write( "<div style='height:100%'>");
+  fintext="<button class='cl006'>" + "HEAD" + "</button>";fintext2="<button class='cl006'>" + "BODY" + "</button>";
+         for (i = 0; i < val001; i++){
+           
+var switch001=  top.document.getElementsByTagName("*")[i].parentNode.tagName; 
+       
+
+           var art005=  top.document.getElementsByTagName("*")[i].tagName; 
+          var art006="CHILDREN :" + top.document.getElementsByTagName("*")[i].children.length;
+          var par01="PARENT NODE :" +  top.document.getElementsByTagName("*")[i].parentNode.tagName;
+          // alert(art005)
+
+          var art004="  --  ";
+          switch(switch001) {
+          case "HEAD":
+          fintext+="<button class='cl005'>" + art005 + "</button>";
+                         fintext+="<div class='cl005'>" + top.document.getElementsByTagName("*")[i].innerHTML + "</div>";
+                      //    fintext+="<button>" + par01 + "</button>";
+                      //    fintext+="<button>" + art004 + "</button>";
+                      //    fintext+="<button>" + art006 + "</button>";
+
+           break;
+         case "BODY":
+         fintext2+="<button class='cl005'>" + art005 + "</button>";
+ fintext2+="<div class='cl005'>" + top.document.getElementsByTagName("*")[i].innerHTML + "</div>";
+          break;
+
+   default:
+    }
+
+
+         };
+
+             mapawin.document.write("<div class='cl005'>" +  fintext  + "</div>");
+        mapawin.document.write("<br>");
+    mapawin.document.write("<div class='cl005'>" +  fintext2  + "</div>");
+        mapawin.document.write("<br>");
+
+ mapawin.document.write("</div><br>");
+ mapawin.document.close();
+
+}
+
+function mapahead(){
+
+//var val001=top.document.getElementsByTagName("*").length;
+//var fintext;
+var mapawin= window.open("Mapa", "Mapa", "width=200,height=640");
+mapawin.document.open();
+ //var css001="<style> body{padding:10px;overflow:scroll} ul{display:none; width:6%;float:left; border:solid 2px red;height:140px;overflow:scroll;padding:10px;border-radius:15px;}  header,footer{display:none; width:90%;float:right; border:solid 2px blue;height:100px;overflow:scroll;padding:10px;border-radius:15px;} div{border:solid 2px black;height:150px;overflow:scroll;padding:10px;border-radius:15px;}img{width:80px;height:80px;margin:5px;border-radius:15px;}</style><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>";
+ var css001="<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>";
+
+var css002 =""
+ css002 +="<style>"
+ css002 +=" body{padding:10px;overflow:scroll} "
+ css002 +=" ul{display:none; width:6%;float:left; border:solid 2px red;height:140px;overflow:scroll;padding:10px;border-radius:15px;} "
+ css002 +=" header,footer{display:none; width:90%;float:right; border:solid 2px blue;height:100px;overflow:scroll;padding:10px;border-radius:15px;} "
+ css002 +=" div{border:solid 2px black;height:150px;overflow:scroll;padding:10px;border-radius:15px;}.cl005{border:solid 1px black;height:auto;padding:10px;border-radius:15px;overflow:hidden;width:100%} "
+ css002 +=" img{width:80px;height:80px;margin:5px;border-radius:15px;} "
+ css002 +="</style>"
+
+ mapawin.document.write( css001);
+ mapawin.document.write( css002 );
+
+
+
+mapawin.document.write( "<div style='height:100%'>");
+         for (i = 0; i < val001; i++){
+             fintext="";
+
+           var art005= "TAG :" + top.document.getElementsByTagName("*")[i].tagName; 
+          var art006="CHILDREN :" + top.document.getElementsByTagName("*")[i].children.length;
+          var par01="PARENT NODE :" +  top.document.getElementsByTagName("*")[i].parentNode.tagName;
+          // alert(art005)
+
+          var art004="  --  ";
+fintext+="<script>function run001(text88){alert(text88)};</script>"
+          fintext+="<button onclick='run001(this.tagName)' class='cl005'>" + art005 + "</button>";
+       //   fintext+="<button>" + art004 + "</button>";
+      //    fintext+="<button>" + par01 + "</button>";
+      //    fintext+="<button>" + art004 + "</button>";
+      //    fintext+="<button>" + art006 + "</button>";
+
+        mapawin.document.write("<div class='cl005'>" +  fintext  + "</div>");
+        mapawin.document.write("<br>");
+         };
+
+ mapawin.document.write("</div><br>");
+ mapawin.document.close();
+
+}
+var val001=top.document.getElementsByTagName("*").length;
+var fintext;var fintext2;
+
+function manager001(){
+
+arranque01();
+ cierre01();
+
+
+
+
+
+}
+
+function arranque01(){
+var mapawin= window.open("", "Mapa", "width=200,height=640");
+mapawin.document.open();
+ //var css001="<style> body{padding:10px;overflow:scroll} ul{display:none; width:6%;float:left; border:solid 2px red;height:140px;overflow:scroll;padding:10px;border-radius:15px;}  header,footer{display:none; width:90%;float:right; border:solid 2px blue;height:100px;overflow:scroll;padding:10px;border-radius:15px;} div{border:solid 2px black;height:150px;overflow:scroll;padding:10px;border-radius:15px;}img{width:80px;height:80px;margin:5px;border-radius:15px;}</style><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>";
+ var css001="<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>";
+
+var css002 =""
+ css002 +="<style>"
+ css002 +=" body{padding:10px;overflow:scroll} "
+ css002 +=" ul{display:none; width:6%;float:left; border:solid 2px red;height:140px;overflow:scroll;padding:10px;border-radius:15px;} "
+ css002 +=" header,footer{display:none; width:90%;float:right; border:solid 2px blue;height:100px;overflow:scroll;padding:10px;border-radius:15px;} "
+ css002 +=" div{border:solid 2px black;height:150px;overflow:scroll;padding:10px;border-radius:15px;}.cl005{border:solid 1px black;height:auto;padding:10px;border-radius:15px;overflow:hidden;width:100%} "
+ css002 +=" img{width:80px;height:80px;margin:5px;border-radius:15px;} "
+ css002 +="</style>"
+
+ mapawin.document.write( css001);
+ mapawin.document.write( css002 );
+// mapawin.document.close();
+}
+
+function cierre01(){
+  //  mapawin.document.open();
+   mapawin.document.write(" <div>rrrrrr</div>")
+ mapawin.document.close();
+    
+}

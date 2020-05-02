@@ -1,0 +1,4 @@
+alert(66);
+//form1:bgimg
+var val10=document.getElementById("form1:bgimg");
+alert(val10.src);

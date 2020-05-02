@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<body>
+   <div style="padding:5px" class="container-fluid">
+<form method="GET" action="http://10.10.1.24:8017/app/ECMS/ecms/JobCost/JCPosting"  target="ifr01">
+
+ 
+
+	 	      <div class="input-group mb-3">
+      <div class="input-group-prepend">
+	    <button class="btn btn-danger" type="button">Project</button>   
+        <div class="input-group-text">
+          <input style="width:80px;" class="form-control" type="text" name="PROJECT" value="6/701/1">
+        </div>
+      </div>
+      <div class="input-group-prepend">
+	    <button class="btn btn-danger" type="button">From</button>   
+        <div class="input-group-text">
+         <input style="width:150px;" class="form-control" type="date" name="ENTEREDFROM">
+        </div>
+      </div>
+	  
+	        <div class="input-group-prepend">
+	    <button class="btn btn-danger" type="button">To</button>   
+        <div class="input-group-text">
+          <input style="width:150px;" class="form-control" type="date" name="ENTEREDTO">
+        </div>
+      </div>
+    </div>
+		   
+		   
+	      <div class="input-group mb-3">
+      <div class="input-group-prepend">
+	    <button class="btn btn-danger" type="button">Hide ToolBar</button>   
+        <div class="input-group-text">
+            <select name="_MINIMALUI"><option>Y</option><option>N</option></select>
+        </div>
+      </div>
+      <div class="input-group-prepend">
+	    <button class="btn btn-danger" type="button">Show Results</button>   
+        <div class="input-group-text">
+            <select name="showresults"><option>Y</option><option>N</option></select>
+        </div>
+      </div>
+	  
+	        <div class="input-group-prepend">
+	    <button class="btn btn-danger" type="button">Show Criteris</button>   
+        <div class="input-group-text">
+            <select name="showcriteria"><option>Y</option><option>N</option></select>
+        </div>
+      </div>
+    </div>
+		 
+
+ 
+
+	
+	  <input class="form-control"  type="submit">
+	
+</form>
+
+
+<iframe name="ifr01" style="width:100%;height:50vh;"></iframe>
+  </div>
+</body>
+</html>
